@@ -17,17 +17,17 @@ const SECTIONS: Section[] = [
   },
   {
     href: "/unificar",
-    title: "Unificar CSV",
+    title: "Unificar y entrenar",
     description:
-      "Combina todos los CSV de data/raw/, calcula las columnas (Elo, forma reciente, valor de plantilla, head-to-head) y deja un CSV listo para entrenar en data/processed/.",
-    status: "soon",
+      "Combina los CSV de data/raw/, calcula Elo histórico, forma reciente y valor de plantilla, y entrena el modelo de predicción.",
+    status: "ready",
   },
   {
     href: "/predicciones",
     title: "Predicciones",
     description:
-      "Probabilidades de victoria/empate/derrota por partido del Mundial, usando el modelo entrenado con el CSV unificado.",
-    status: "soon",
+      "Probabilidades de victoria/empate/derrota para los partidos del Mundial 2026, calculadas por el modelo entrenado.",
+    status: "ready",
   },
 ];
 
