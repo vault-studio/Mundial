@@ -85,6 +85,12 @@ export default function UnificarPage() {
             buttonLabel="Entrenar"
             endpoint="/api/train"
           />
+          <ActionCard
+            title="Generar grupos y eliminatorias"
+            description="Reconstruye los 12 grupos del Mundial, calcula la clasificación y simula el cuadro de eliminatorias (dieciseisavos a final) con las predicciones del modelo, en data/processed/torneo.json."
+            buttonLabel="Generar"
+            endpoint="/api/torneo"
+          />
         </div>
       </div>
     </div>
