@@ -3,10 +3,10 @@ Genera el estado completo del Mundial 2026 (grupos + eliminatorias) en
 data/processed/torneo.json para que la web lo muestre por pestañas.
 
 - Grupos: los 12 grupos se reconstruyen a partir del propio calendario (cada
-  grupo es un conjunto de 4 equipos que solo se enfrentan entre sí). El CSV
-  de origen no trae las letras oficiales de grupo de la FIFA, así que se
-  numeran 1-12 con un equipo "ancla" como referencia, no son las letras A-L
-  reales del sorteo.
+  grupo es un conjunto de 4 equipos que solo se enfrentan entre sí). Las
+  letras oficiales A-L (GROUP_LETTERS) se tomaron de la clasificación
+  publicada en as.com y se asignan emparejando el conjunto de equipos, no
+  por orden de aparición.
 - Clasificados: 2 primeros de cada grupo + los 8 mejores terceros (por
   puntos, con el promedio de probabilidad de victoria del modelo como
   criterio de desempate, ya que no tenemos diferencia de goles para los
@@ -60,6 +60,27 @@ ROUND_NAMES = [
     "Semifinales",
     "Final",
 ]
+
+# Letras oficiales del sorteo (fuente: as.com/resultados/futbol/mundial/clasificacion),
+# emparejadas por el conjunto de equipos de cada grupo, no por orden de aparición.
+GROUP_LETTERS = {
+    frozenset(["Czech Republic", "Mexico", "South Africa", "South Korea"]): "A",
+    frozenset(["Bosnia and Herzegovina", "Canada", "Qatar", "Switzerland"]): "B",
+    frozenset(["Brazil", "Haiti", "Morocco", "Scotland"]): "C",
+    frozenset(["Australia", "Paraguay", "Turkey", "United States"]): "D",
+    frozenset(["Curaçao", "Ecuador", "Germany", "Ivory Coast"]): "E",
+    frozenset(["Japan", "Netherlands", "Sweden", "Tunisia"]): "F",
+    frozenset(["Belgium", "Egypt", "Iran", "New Zealand"]): "G",
+    frozenset(["Cape Verde", "Saudi Arabia", "Spain", "Uruguay"]): "H",
+    frozenset(["France", "Iraq", "Norway", "Senegal"]): "I",
+    frozenset(["Algeria", "Argentina", "Austria", "Jordan"]): "J",
+    frozenset(["Colombia", "DR Congo", "Portugal", "Uzbekistan"]): "K",
+    frozenset(["Croatia", "England", "Ghana", "Panama"]): "L",
+}
+
+
+def group_letter(teams):
+    return GROUP_LETTERS.get(frozenset(teams), "?")
 
 
 def load_group_matches():
@@ -238,6 +259,7 @@ def seed_bracket(qualifiers):
 def main():
     matches = load_group_matches()
     groups = reconstruct_groups(matches)
+    groups.sort(key=lambda teams: group_letter(teams))
     model = joblib.load(MODEL_PATH)
     training_df = pd.read_csv(TRAINING_PATH)
     for col in ["squad_value_home", "squad_value_away", "squad_value_diff"]:
@@ -253,7 +275,7 @@ def main():
         match_views = [group_match_view(m, model, snap) for m in group_matches]
         standings = compute_standings(teams, match_views)
 
-        group_label = f"Grupo {i + 1}"
+        group_label = f"Grupo {group_letter(teams)}"
         groups_out.append({"label": group_label, "standings": standings, "matches": match_views})
 
         for r in standings[:2]:

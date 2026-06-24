@@ -1,1114 +1,7 @@
 {
   "groups": [
     {
-      "label": "Grupo 1",
-      "standings": [
-        {
-          "team": "Argentina",
-          "pj": 3,
-          "pg": 3,
-          "pe": 0,
-          "pp": 0,
-          "gf": 6,
-          "gc": 0,
-          "pts": 9,
-          "prob_sum": 2.1913,
-          "gd": 6,
-          "pos": 1
-        },
-        {
-          "team": "Austria",
-          "pj": 3,
-          "pg": 2,
-          "pe": 0,
-          "pp": 1,
-          "gf": 4,
-          "gc": 3,
-          "pts": 6,
-          "prob_sum": 1.0969000000000002,
-          "gd": 1,
-          "pos": 2
-        },
-        {
-          "team": "Algeria",
-          "pj": 3,
-          "pg": 1,
-          "pe": 0,
-          "pp": 2,
-          "gf": 2,
-          "gc": 5,
-          "pts": 3,
-          "prob_sum": 1.0285,
-          "gd": -3,
-          "pos": 3
-        },
-        {
-          "team": "Jordan",
-          "pj": 3,
-          "pg": 0,
-          "pe": 0,
-          "pp": 3,
-          "gf": 2,
-          "gc": 6,
-          "pts": 0,
-          "prob_sum": 0.3894,
-          "gd": -4,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-16",
-          "home_team": "Argentina",
-          "away_team": "Algeria",
-          "played": true,
-          "prob_H": 0.6533,
-          "prob_D": 0.2282,
-          "prob_A": 0.1185,
-          "home_score": 3,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-16",
-          "home_team": "Austria",
-          "away_team": "Jordan",
-          "played": true,
-          "prob_H": 0.6064,
-          "prob_D": 0.2347,
-          "prob_A": 0.1589,
-          "home_score": 3,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-22",
-          "home_team": "Argentina",
-          "away_team": "Austria",
-          "played": true,
-          "prob_H": 0.7369,
-          "prob_D": 0.1887,
-          "prob_A": 0.0744,
-          "home_score": 2,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-22",
-          "home_team": "Jordan",
-          "away_team": "Algeria",
-          "played": true,
-          "prob_H": 0.1571,
-          "prob_D": 0.2219,
-          "prob_A": 0.621,
-          "home_score": 1,
-          "away_score": 2
-        },
-        {
-          "date": "2026-06-27",
-          "home_team": "Algeria",
-          "away_team": "Austria",
-          "played": false,
-          "prob_H": 0.289,
-          "prob_D": 0.2949,
-          "prob_A": 0.4161,
-          "predicted": "A"
-        },
-        {
-          "date": "2026-06-27",
-          "home_team": "Jordan",
-          "away_team": "Argentina",
-          "played": false,
-          "prob_H": 0.0734,
-          "prob_D": 0.1256,
-          "prob_A": 0.8011,
-          "predicted": "A"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 2",
-      "standings": [
-        {
-          "team": "United States",
-          "pj": 3,
-          "pg": 3,
-          "pe": 0,
-          "pp": 0,
-          "gf": 7,
-          "gc": 1,
-          "pts": 9,
-          "prob_sum": 1.1341999999999999,
-          "gd": 6,
-          "pos": 1
-        },
-        {
-          "team": "Australia",
-          "pj": 3,
-          "pg": 2,
-          "pe": 0,
-          "pp": 1,
-          "gf": 3,
-          "gc": 2,
-          "pts": 6,
-          "prob_sum": 0.9601,
-          "gd": 1,
-          "pos": 2
-        },
-        {
-          "team": "Paraguay",
-          "pj": 3,
-          "pg": 1,
-          "pe": 0,
-          "pp": 2,
-          "gf": 2,
-          "gc": 5,
-          "pts": 3,
-          "prob_sum": 0.9227000000000001,
-          "gd": -3,
-          "pos": 3
-        },
-        {
-          "team": "Turkey",
-          "pj": 3,
-          "pg": 0,
-          "pe": 0,
-          "pp": 3,
-          "gf": 0,
-          "gc": 4,
-          "pts": 0,
-          "prob_sum": 1.2259,
-          "gd": -4,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-12",
-          "home_team": "United States",
-          "away_team": "Paraguay",
-          "played": true,
-          "prob_H": 0.3991,
-          "prob_D": 0.2997,
-          "prob_A": 0.3012,
-          "home_score": 4,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-13",
-          "home_team": "Australia",
-          "away_team": "Turkey",
-          "played": true,
-          "prob_H": 0.2484,
-          "prob_D": 0.2746,
-          "prob_A": 0.477,
-          "home_score": 2,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-19",
-          "home_team": "United States",
-          "away_team": "Australia",
-          "played": true,
-          "prob_H": 0.3641,
-          "prob_D": 0.3118,
-          "prob_A": 0.3241,
-          "home_score": 2,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-19",
-          "home_team": "Turkey",
-          "away_team": "Paraguay",
-          "played": true,
-          "prob_H": 0.3897,
-          "prob_D": 0.311,
-          "prob_A": 0.2993,
-          "home_score": 0,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-25",
-          "home_team": "United States",
-          "away_team": "Turkey",
-          "played": false,
-          "prob_H": 0.371,
-          "prob_D": 0.2698,
-          "prob_A": 0.3592,
-          "predicted": "H"
-        },
-        {
-          "date": "2026-06-25",
-          "home_team": "Paraguay",
-          "away_team": "Australia",
-          "played": false,
-          "prob_H": 0.3222,
-          "prob_D": 0.2902,
-          "prob_A": 0.3876,
-          "predicted": "A"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 3",
-      "standings": [
-        {
-          "team": "Iran",
-          "pj": 3,
-          "pg": 1,
-          "pe": 2,
-          "pp": 0,
-          "gf": 3,
-          "gc": 2,
-          "pts": 5,
-          "prob_sum": 1.1153,
-          "gd": 1,
-          "pos": 1
-        },
-        {
-          "team": "Belgium",
-          "pj": 3,
-          "pg": 1,
-          "pe": 2,
-          "pp": 0,
-          "gf": 2,
-          "gc": 1,
-          "pts": 5,
-          "prob_sum": 1.6749,
-          "gd": 1,
-          "pos": 2
-        },
-        {
-          "team": "Egypt",
-          "pj": 3,
-          "pg": 1,
-          "pe": 1,
-          "pp": 1,
-          "gf": 4,
-          "gc": 3,
-          "pts": 4,
-          "prob_sum": 1.0015,
-          "gd": 1,
-          "pos": 3
-        },
-        {
-          "team": "New Zealand",
-          "pj": 3,
-          "pg": 0,
-          "pe": 1,
-          "pp": 2,
-          "gf": 3,
-          "gc": 6,
-          "pts": 1,
-          "prob_sum": 0.4463,
-          "gd": -3,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-15",
-          "home_team": "Belgium",
-          "away_team": "Egypt",
-          "played": true,
-          "prob_H": 0.5082,
-          "prob_D": 0.3097,
-          "prob_A": 0.1821,
-          "home_score": 1,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-15",
-          "home_team": "Iran",
-          "away_team": "New Zealand",
-          "played": true,
-          "prob_H": 0.5808,
-          "prob_D": 0.2829,
-          "prob_A": 0.1363,
-          "home_score": 2,
-          "away_score": 2
-        },
-        {
-          "date": "2026-06-21",
-          "home_team": "Belgium",
-          "away_team": "Iran",
-          "played": true,
-          "prob_H": 0.5225,
-          "prob_D": 0.2828,
-          "prob_A": 0.1948,
-          "home_score": 0,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-21",
-          "home_team": "New Zealand",
-          "away_team": "Egypt",
-          "played": true,
-          "prob_H": 0.2067,
-          "prob_D": 0.3113,
-          "prob_A": 0.482,
-          "home_score": 1,
-          "away_score": 3
-        },
-        {
-          "date": "2026-06-26",
-          "home_team": "Egypt",
-          "away_team": "Iran",
-          "played": false,
-          "prob_H": 0.3374,
-          "prob_D": 0.323,
-          "prob_A": 0.3397,
-          "predicted": "A"
-        },
-        {
-          "date": "2026-06-26",
-          "home_team": "New Zealand",
-          "away_team": "Belgium",
-          "played": false,
-          "prob_H": 0.1033,
-          "prob_D": 0.2525,
-          "prob_A": 0.6442,
-          "predicted": "A"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 4",
-      "standings": [
-        {
-          "team": "Switzerland",
-          "pj": 3,
-          "pg": 2,
-          "pe": 1,
-          "pp": 0,
-          "gf": 6,
-          "gc": 2,
-          "pts": 7,
-          "prob_sum": 1.917,
-          "gd": 4,
-          "pos": 1
-        },
-        {
-          "team": "Canada",
-          "pj": 3,
-          "pg": 1,
-          "pe": 1,
-          "pp": 1,
-          "gf": 7,
-          "gc": 2,
-          "pts": 4,
-          "prob_sum": 1.6801,
-          "gd": 5,
-          "pos": 2
-        },
-        {
-          "team": "Bosnia and Herzegovina",
-          "pj": 3,
-          "pg": 1,
-          "pe": 1,
-          "pp": 1,
-          "gf": 3,
-          "gc": 5,
-          "pts": 4,
-          "prob_sum": 0.6984,
-          "gd": -2,
-          "pos": 3
-        },
-        {
-          "team": "Qatar",
-          "pj": 3,
-          "pg": 0,
-          "pe": 1,
-          "pp": 2,
-          "gf": 1,
-          "gc": 8,
-          "pts": 1,
-          "prob_sum": 0.3409,
-          "gd": -7,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-12",
-          "home_team": "Canada",
-          "away_team": "Bosnia and Herzegovina",
-          "played": true,
-          "prob_H": 0.6455,
-          "prob_D": 0.243,
-          "prob_A": 0.1115,
-          "home_score": 1,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-13",
-          "home_team": "Qatar",
-          "away_team": "Switzerland",
-          "played": true,
-          "prob_H": 0.0661,
-          "prob_D": 0.1723,
-          "prob_A": 0.7615,
-          "home_score": 1,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-18",
-          "home_team": "Switzerland",
-          "away_team": "Bosnia and Herzegovina",
-          "played": true,
-          "prob_H": 0.7144,
-          "prob_D": 0.1849,
-          "prob_A": 0.1006,
-          "home_score": 4,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-18",
-          "home_team": "Canada",
-          "away_team": "Qatar",
-          "played": true,
-          "prob_H": 0.7791,
-          "prob_D": 0.1704,
-          "prob_A": 0.0505,
-          "home_score": 6,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-24",
-          "home_team": "Canada",
-          "away_team": "Switzerland",
-          "played": false,
-          "prob_H": 0.2555,
-          "prob_D": 0.3033,
-          "prob_A": 0.4411,
-          "predicted": "A"
-        },
-        {
-          "date": "2026-06-24",
-          "home_team": "Bosnia and Herzegovina",
-          "away_team": "Qatar",
-          "played": false,
-          "prob_H": 0.4863,
-          "prob_D": 0.2894,
-          "prob_A": 0.2243,
-          "predicted": "H"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 5",
-      "standings": [
-        {
-          "team": "Brazil",
-          "pj": 3,
-          "pg": 2,
-          "pe": 1,
-          "pp": 0,
-          "gf": 5,
-          "gc": 1,
-          "pts": 7,
-          "prob_sum": 1.8807,
-          "gd": 4,
-          "pos": 1
-        },
-        {
-          "team": "Morocco",
-          "pj": 3,
-          "pg": 2,
-          "pe": 1,
-          "pp": 0,
-          "gf": 3,
-          "gc": 1,
-          "pts": 7,
-          "prob_sum": 1.4262000000000001,
-          "gd": 2,
-          "pos": 2
-        },
-        {
-          "team": "Scotland",
-          "pj": 3,
-          "pg": 1,
-          "pe": 0,
-          "pp": 2,
-          "gf": 1,
-          "gc": 2,
-          "pts": 3,
-          "prob_sum": 0.9366,
-          "gd": -1,
-          "pos": 3
-        },
-        {
-          "team": "Haiti",
-          "pj": 3,
-          "pg": 0,
-          "pe": 0,
-          "pp": 3,
-          "gf": 0,
-          "gc": 5,
-          "pts": 0,
-          "prob_sum": 0.3175,
-          "gd": -5,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-13",
-          "home_team": "Brazil",
-          "away_team": "Morocco",
-          "played": true,
-          "prob_H": 0.4372,
-          "prob_D": 0.3762,
-          "prob_A": 0.1866,
-          "home_score": 1,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-13",
-          "home_team": "Haiti",
-          "away_team": "Scotland",
-          "played": true,
-          "prob_H": 0.1812,
-          "prob_D": 0.2565,
-          "prob_A": 0.5623,
-          "home_score": 0,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-19",
-          "home_team": "Scotland",
-          "away_team": "Morocco",
-          "played": true,
-          "prob_H": 0.2103,
-          "prob_D": 0.2726,
-          "prob_A": 0.5171,
-          "home_score": 0,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-19",
-          "home_team": "Brazil",
-          "away_team": "Haiti",
-          "played": true,
-          "prob_H": 0.7996,
-          "prob_D": 0.1481,
-          "prob_A": 0.0523,
-          "home_score": 3,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-24",
-          "home_team": "Scotland",
-          "away_team": "Brazil",
-          "played": false,
-          "prob_H": 0.164,
-          "prob_D": 0.192,
-          "prob_A": 0.6439,
-          "predicted": "A"
-        },
-        {
-          "date": "2026-06-24",
-          "home_team": "Morocco",
-          "away_team": "Haiti",
-          "played": false,
-          "prob_H": 0.7225,
-          "prob_D": 0.1935,
-          "prob_A": 0.084,
-          "predicted": "H"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 6",
-      "standings": [
-        {
-          "team": "Spain",
-          "pj": 3,
-          "pg": 2,
-          "pe": 1,
-          "pp": 0,
-          "gf": 5,
-          "gc": 0,
-          "pts": 7,
-          "prob_sum": 2.4210000000000003,
-          "gd": 5,
-          "pos": 1
-        },
-        {
-          "team": "Saudi Arabia",
-          "pj": 3,
-          "pg": 1,
-          "pe": 1,
-          "pp": 1,
-          "gf": 2,
-          "gc": 5,
-          "pts": 4,
-          "prob_sum": 0.5229999999999999,
-          "gd": -3,
-          "pos": 2
-        },
-        {
-          "team": "Uruguay",
-          "pj": 3,
-          "pg": 0,
-          "pe": 2,
-          "pp": 1,
-          "gf": 3,
-          "gc": 4,
-          "pts": 2,
-          "prob_sum": 1.3263,
-          "gd": -1,
-          "pos": 3
-        },
-        {
-          "team": "Cape Verde",
-          "pj": 3,
-          "pg": 0,
-          "pe": 2,
-          "pp": 1,
-          "gf": 2,
-          "gc": 3,
-          "pts": 2,
-          "prob_sum": 0.44970000000000004,
-          "gd": -1,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-15",
-          "home_team": "Spain",
-          "away_team": "Cape Verde",
-          "played": true,
-          "prob_H": 0.8836,
-          "prob_D": 0.0821,
-          "prob_A": 0.0344,
-          "home_score": 0,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-15",
-          "home_team": "Saudi Arabia",
-          "away_team": "Uruguay",
-          "played": true,
-          "prob_H": 0.1387,
-          "prob_D": 0.2634,
-          "prob_A": 0.5979,
-          "home_score": 1,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-21",
-          "home_team": "Spain",
-          "away_team": "Saudi Arabia",
-          "played": true,
-          "prob_H": 0.8836,
-          "prob_D": 0.0821,
-          "prob_A": 0.0344,
-          "home_score": 4,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-21",
-          "home_team": "Uruguay",
-          "away_team": "Cape Verde",
-          "played": true,
-          "prob_H": 0.6216,
-          "prob_D": 0.2814,
-          "prob_A": 0.097,
-          "home_score": 2,
-          "away_score": 2
-        },
-        {
-          "date": "2026-06-26",
-          "home_team": "Cape Verde",
-          "away_team": "Saudi Arabia",
-          "played": false,
-          "prob_H": 0.3183,
-          "prob_D": 0.3318,
-          "prob_A": 0.3499,
-          "predicted": "A"
-        },
-        {
-          "date": "2026-06-26",
-          "home_team": "Uruguay",
-          "away_team": "Spain",
-          "played": false,
-          "prob_H": 0.1068,
-          "prob_D": 0.2394,
-          "prob_A": 0.6538,
-          "predicted": "A"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 7",
-      "standings": [
-        {
-          "team": "Portugal",
-          "pj": 3,
-          "pg": 2,
-          "pe": 1,
-          "pp": 0,
-          "gf": 7,
-          "gc": 1,
-          "pts": 7,
-          "prob_sum": 1.8285,
-          "gd": 6,
-          "pos": 1
-        },
-        {
-          "team": "Colombia",
-          "pj": 3,
-          "pg": 2,
-          "pe": 0,
-          "pp": 1,
-          "gf": 4,
-          "gc": 2,
-          "pts": 6,
-          "prob_sum": 1.6672000000000002,
-          "gd": 2,
-          "pos": 2
-        },
-        {
-          "team": "DR Congo",
-          "pj": 3,
-          "pg": 1,
-          "pe": 1,
-          "pp": 1,
-          "gf": 2,
-          "gc": 2,
-          "pts": 4,
-          "prob_sum": 0.5524,
-          "gd": 0,
-          "pos": 3
-        },
-        {
-          "team": "Uzbekistan",
-          "pj": 3,
-          "pg": 0,
-          "pe": 0,
-          "pp": 3,
-          "gf": 1,
-          "gc": 9,
-          "pts": 0,
-          "prob_sum": 0.4984,
-          "gd": -8,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-17",
-          "home_team": "Portugal",
-          "away_team": "DR Congo",
-          "played": true,
-          "prob_H": 0.7183,
-          "prob_D": 0.2017,
-          "prob_A": 0.08,
-          "home_score": 1,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-17",
-          "home_team": "Uzbekistan",
-          "away_team": "Colombia",
-          "played": true,
-          "prob_H": 0.0843,
-          "prob_D": 0.1487,
-          "prob_A": 0.767,
-          "home_score": 1,
-          "away_score": 3
-        },
-        {
-          "date": "2026-06-23",
-          "home_team": "Portugal",
-          "away_team": "Uzbekistan",
-          "played": true,
-          "prob_H": 0.7008,
-          "prob_D": 0.2177,
-          "prob_A": 0.0815,
-          "home_score": 5,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-23",
-          "home_team": "Colombia",
-          "away_team": "DR Congo",
-          "played": true,
-          "prob_H": 0.6428,
-          "prob_D": 0.2201,
-          "prob_A": 0.1371,
-          "home_score": 1,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-27",
-          "home_team": "Colombia",
-          "away_team": "Portugal",
-          "played": false,
-          "prob_H": 0.2574,
-          "prob_D": 0.3332,
-          "prob_A": 0.4094,
-          "predicted": "A"
-        },
-        {
-          "date": "2026-06-27",
-          "home_team": "DR Congo",
-          "away_team": "Uzbekistan",
-          "played": false,
-          "prob_H": 0.3353,
-          "prob_D": 0.332,
-          "prob_A": 0.3326,
-          "predicted": "H"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 8",
-      "standings": [
-        {
-          "team": "England",
-          "pj": 3,
-          "pg": 2,
-          "pe": 1,
-          "pp": 0,
-          "gf": 5,
-          "gc": 2,
-          "pts": 7,
-          "prob_sum": 2.1912000000000003,
-          "gd": 3,
-          "pos": 1
-        },
-        {
-          "team": "Croatia",
-          "pj": 3,
-          "pg": 2,
-          "pe": 0,
-          "pp": 1,
-          "gf": 4,
-          "gc": 4,
-          "pts": 6,
-          "prob_sum": 1.5234999999999999,
-          "gd": 0,
-          "pos": 2
-        },
-        {
-          "team": "Ghana",
-          "pj": 3,
-          "pg": 1,
-          "pe": 1,
-          "pp": 1,
-          "gf": 1,
-          "gc": 1,
-          "pts": 4,
-          "prob_sum": 0.4222,
-          "gd": 0,
-          "pos": 3
-        },
-        {
-          "team": "Panama",
-          "pj": 3,
-          "pg": 0,
-          "pe": 0,
-          "pp": 3,
-          "gf": 0,
-          "gc": 3,
-          "pts": 0,
-          "prob_sum": 0.6328,
-          "gd": -3,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-17",
-          "home_team": "England",
-          "away_team": "Croatia",
-          "played": true,
-          "prob_H": 0.6196,
-          "prob_D": 0.1975,
-          "prob_A": 0.183,
-          "home_score": 4,
-          "away_score": 2
-        },
-        {
-          "date": "2026-06-17",
-          "home_team": "Ghana",
-          "away_team": "Panama",
-          "played": true,
-          "prob_H": 0.2394,
-          "prob_D": 0.3038,
-          "prob_A": 0.4568,
-          "home_score": 1,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-23",
-          "home_team": "England",
-          "away_team": "Ghana",
-          "played": true,
-          "prob_H": 0.7996,
-          "prob_D": 0.1354,
-          "prob_A": 0.0649,
-          "home_score": 0,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-23",
-          "home_team": "Panama",
-          "away_team": "Croatia",
-          "played": true,
-          "prob_H": 0.117,
-          "prob_D": 0.2001,
-          "prob_A": 0.6829,
-          "home_score": 0,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-27",
-          "home_team": "Panama",
-          "away_team": "England",
-          "played": false,
-          "prob_H": 0.059,
-          "prob_D": 0.169,
-          "prob_A": 0.772,
-          "predicted": "A"
-        },
-        {
-          "date": "2026-06-27",
-          "home_team": "Croatia",
-          "away_team": "Ghana",
-          "played": false,
-          "prob_H": 0.6576,
-          "prob_D": 0.2245,
-          "prob_A": 0.1179,
-          "predicted": "H"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 9",
-      "standings": [
-        {
-          "team": "Germany",
-          "pj": 3,
-          "pg": 3,
-          "pe": 0,
-          "pp": 0,
-          "gf": 10,
-          "gc": 2,
-          "pts": 9,
-          "prob_sum": 1.9947000000000001,
-          "gd": 8,
-          "pos": 1
-        },
-        {
-          "team": "Ivory Coast",
-          "pj": 3,
-          "pg": 2,
-          "pe": 0,
-          "pp": 1,
-          "gf": 3,
-          "gc": 2,
-          "pts": 6,
-          "prob_sum": 1.0973,
-          "gd": 1,
-          "pos": 2
-        },
-        {
-          "team": "Ecuador",
-          "pj": 3,
-          "pg": 0,
-          "pe": 1,
-          "pp": 2,
-          "gf": 0,
-          "gc": 2,
-          "pts": 1,
-          "prob_sum": 1.3711000000000002,
-          "gd": -2,
-          "pos": 3
-        },
-        {
-          "team": "Curaçao",
-          "pj": 3,
-          "pg": 0,
-          "pe": 1,
-          "pp": 2,
-          "gf": 1,
-          "gc": 8,
-          "pts": 1,
-          "prob_sum": 0.2361,
-          "gd": -7,
-          "pos": 4
-        }
-      ],
-      "matches": [
-        {
-          "date": "2026-06-14",
-          "home_team": "Germany",
-          "away_team": "Curaçao",
-          "played": true,
-          "prob_H": 0.8574,
-          "prob_D": 0.1075,
-          "prob_A": 0.0351,
-          "home_score": 7,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-14",
-          "home_team": "Ivory Coast",
-          "away_team": "Ecuador",
-          "played": true,
-          "prob_H": 0.2956,
-          "prob_D": 0.354,
-          "prob_A": 0.3503,
-          "home_score": 1,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-20",
-          "home_team": "Germany",
-          "away_team": "Ivory Coast",
-          "played": true,
-          "prob_H": 0.6997,
-          "prob_D": 0.1949,
-          "prob_A": 0.1055,
-          "home_score": 2,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-20",
-          "home_team": "Ecuador",
-          "away_team": "Curaçao",
-          "played": true,
-          "prob_H": 0.7718,
-          "prob_D": 0.1676,
-          "prob_A": 0.0607,
-          "home_score": 0,
-          "away_score": 0
-        },
-        {
-          "date": "2026-06-25",
-          "home_team": "Curaçao",
-          "away_team": "Ivory Coast",
-          "played": false,
-          "prob_H": 0.1403,
-          "prob_D": 0.1635,
-          "prob_A": 0.6962,
-          "predicted": "A"
-        },
-        {
-          "date": "2026-06-25",
-          "home_team": "Ecuador",
-          "away_team": "Germany",
-          "played": false,
-          "prob_H": 0.249,
-          "prob_D": 0.3135,
-          "prob_A": 0.4376,
-          "predicted": "A"
-        }
-      ]
-    },
-    {
-      "label": "Grupo 10",
+      "label": "Grupo A",
       "standings": [
         {
           "team": "Mexico",
@@ -1231,7 +124,868 @@
       ]
     },
     {
-      "label": "Grupo 11",
+      "label": "Grupo B",
+      "standings": [
+        {
+          "team": "Switzerland",
+          "pj": 3,
+          "pg": 2,
+          "pe": 1,
+          "pp": 0,
+          "gf": 6,
+          "gc": 2,
+          "pts": 7,
+          "prob_sum": 1.917,
+          "gd": 4,
+          "pos": 1
+        },
+        {
+          "team": "Canada",
+          "pj": 3,
+          "pg": 1,
+          "pe": 1,
+          "pp": 1,
+          "gf": 7,
+          "gc": 2,
+          "pts": 4,
+          "prob_sum": 1.6801,
+          "gd": 5,
+          "pos": 2
+        },
+        {
+          "team": "Bosnia and Herzegovina",
+          "pj": 3,
+          "pg": 1,
+          "pe": 1,
+          "pp": 1,
+          "gf": 3,
+          "gc": 5,
+          "pts": 4,
+          "prob_sum": 0.6984,
+          "gd": -2,
+          "pos": 3
+        },
+        {
+          "team": "Qatar",
+          "pj": 3,
+          "pg": 0,
+          "pe": 1,
+          "pp": 2,
+          "gf": 1,
+          "gc": 8,
+          "pts": 1,
+          "prob_sum": 0.3409,
+          "gd": -7,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-12",
+          "home_team": "Canada",
+          "away_team": "Bosnia and Herzegovina",
+          "played": true,
+          "prob_H": 0.6455,
+          "prob_D": 0.243,
+          "prob_A": 0.1115,
+          "home_score": 1,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-13",
+          "home_team": "Qatar",
+          "away_team": "Switzerland",
+          "played": true,
+          "prob_H": 0.0661,
+          "prob_D": 0.1723,
+          "prob_A": 0.7615,
+          "home_score": 1,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-18",
+          "home_team": "Switzerland",
+          "away_team": "Bosnia and Herzegovina",
+          "played": true,
+          "prob_H": 0.7144,
+          "prob_D": 0.1849,
+          "prob_A": 0.1006,
+          "home_score": 4,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-18",
+          "home_team": "Canada",
+          "away_team": "Qatar",
+          "played": true,
+          "prob_H": 0.7791,
+          "prob_D": 0.1704,
+          "prob_A": 0.0505,
+          "home_score": 6,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-24",
+          "home_team": "Canada",
+          "away_team": "Switzerland",
+          "played": false,
+          "prob_H": 0.2555,
+          "prob_D": 0.3033,
+          "prob_A": 0.4411,
+          "predicted": "A"
+        },
+        {
+          "date": "2026-06-24",
+          "home_team": "Bosnia and Herzegovina",
+          "away_team": "Qatar",
+          "played": false,
+          "prob_H": 0.4863,
+          "prob_D": 0.2894,
+          "prob_A": 0.2243,
+          "predicted": "H"
+        }
+      ]
+    },
+    {
+      "label": "Grupo C",
+      "standings": [
+        {
+          "team": "Brazil",
+          "pj": 3,
+          "pg": 2,
+          "pe": 1,
+          "pp": 0,
+          "gf": 5,
+          "gc": 1,
+          "pts": 7,
+          "prob_sum": 1.8807,
+          "gd": 4,
+          "pos": 1
+        },
+        {
+          "team": "Morocco",
+          "pj": 3,
+          "pg": 2,
+          "pe": 1,
+          "pp": 0,
+          "gf": 3,
+          "gc": 1,
+          "pts": 7,
+          "prob_sum": 1.4262000000000001,
+          "gd": 2,
+          "pos": 2
+        },
+        {
+          "team": "Scotland",
+          "pj": 3,
+          "pg": 1,
+          "pe": 0,
+          "pp": 2,
+          "gf": 1,
+          "gc": 2,
+          "pts": 3,
+          "prob_sum": 0.9366,
+          "gd": -1,
+          "pos": 3
+        },
+        {
+          "team": "Haiti",
+          "pj": 3,
+          "pg": 0,
+          "pe": 0,
+          "pp": 3,
+          "gf": 0,
+          "gc": 5,
+          "pts": 0,
+          "prob_sum": 0.3175,
+          "gd": -5,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-13",
+          "home_team": "Brazil",
+          "away_team": "Morocco",
+          "played": true,
+          "prob_H": 0.4372,
+          "prob_D": 0.3762,
+          "prob_A": 0.1866,
+          "home_score": 1,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-13",
+          "home_team": "Haiti",
+          "away_team": "Scotland",
+          "played": true,
+          "prob_H": 0.1812,
+          "prob_D": 0.2565,
+          "prob_A": 0.5623,
+          "home_score": 0,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-19",
+          "home_team": "Scotland",
+          "away_team": "Morocco",
+          "played": true,
+          "prob_H": 0.2103,
+          "prob_D": 0.2726,
+          "prob_A": 0.5171,
+          "home_score": 0,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-19",
+          "home_team": "Brazil",
+          "away_team": "Haiti",
+          "played": true,
+          "prob_H": 0.7996,
+          "prob_D": 0.1481,
+          "prob_A": 0.0523,
+          "home_score": 3,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-24",
+          "home_team": "Scotland",
+          "away_team": "Brazil",
+          "played": false,
+          "prob_H": 0.164,
+          "prob_D": 0.192,
+          "prob_A": 0.6439,
+          "predicted": "A"
+        },
+        {
+          "date": "2026-06-24",
+          "home_team": "Morocco",
+          "away_team": "Haiti",
+          "played": false,
+          "prob_H": 0.7225,
+          "prob_D": 0.1935,
+          "prob_A": 0.084,
+          "predicted": "H"
+        }
+      ]
+    },
+    {
+      "label": "Grupo D",
+      "standings": [
+        {
+          "team": "United States",
+          "pj": 3,
+          "pg": 3,
+          "pe": 0,
+          "pp": 0,
+          "gf": 7,
+          "gc": 1,
+          "pts": 9,
+          "prob_sum": 1.1341999999999999,
+          "gd": 6,
+          "pos": 1
+        },
+        {
+          "team": "Australia",
+          "pj": 3,
+          "pg": 2,
+          "pe": 0,
+          "pp": 1,
+          "gf": 3,
+          "gc": 2,
+          "pts": 6,
+          "prob_sum": 0.9601,
+          "gd": 1,
+          "pos": 2
+        },
+        {
+          "team": "Paraguay",
+          "pj": 3,
+          "pg": 1,
+          "pe": 0,
+          "pp": 2,
+          "gf": 2,
+          "gc": 5,
+          "pts": 3,
+          "prob_sum": 0.9227000000000001,
+          "gd": -3,
+          "pos": 3
+        },
+        {
+          "team": "Turkey",
+          "pj": 3,
+          "pg": 0,
+          "pe": 0,
+          "pp": 3,
+          "gf": 0,
+          "gc": 4,
+          "pts": 0,
+          "prob_sum": 1.2259,
+          "gd": -4,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-12",
+          "home_team": "United States",
+          "away_team": "Paraguay",
+          "played": true,
+          "prob_H": 0.3991,
+          "prob_D": 0.2997,
+          "prob_A": 0.3012,
+          "home_score": 4,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-13",
+          "home_team": "Australia",
+          "away_team": "Turkey",
+          "played": true,
+          "prob_H": 0.2484,
+          "prob_D": 0.2746,
+          "prob_A": 0.477,
+          "home_score": 2,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-19",
+          "home_team": "United States",
+          "away_team": "Australia",
+          "played": true,
+          "prob_H": 0.3641,
+          "prob_D": 0.3118,
+          "prob_A": 0.3241,
+          "home_score": 2,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-19",
+          "home_team": "Turkey",
+          "away_team": "Paraguay",
+          "played": true,
+          "prob_H": 0.3897,
+          "prob_D": 0.311,
+          "prob_A": 0.2993,
+          "home_score": 0,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-25",
+          "home_team": "United States",
+          "away_team": "Turkey",
+          "played": false,
+          "prob_H": 0.371,
+          "prob_D": 0.2698,
+          "prob_A": 0.3592,
+          "predicted": "H"
+        },
+        {
+          "date": "2026-06-25",
+          "home_team": "Paraguay",
+          "away_team": "Australia",
+          "played": false,
+          "prob_H": 0.3222,
+          "prob_D": 0.2902,
+          "prob_A": 0.3876,
+          "predicted": "A"
+        }
+      ]
+    },
+    {
+      "label": "Grupo E",
+      "standings": [
+        {
+          "team": "Germany",
+          "pj": 3,
+          "pg": 3,
+          "pe": 0,
+          "pp": 0,
+          "gf": 10,
+          "gc": 2,
+          "pts": 9,
+          "prob_sum": 1.9947000000000001,
+          "gd": 8,
+          "pos": 1
+        },
+        {
+          "team": "Ivory Coast",
+          "pj": 3,
+          "pg": 2,
+          "pe": 0,
+          "pp": 1,
+          "gf": 3,
+          "gc": 2,
+          "pts": 6,
+          "prob_sum": 1.0973,
+          "gd": 1,
+          "pos": 2
+        },
+        {
+          "team": "Ecuador",
+          "pj": 3,
+          "pg": 0,
+          "pe": 1,
+          "pp": 2,
+          "gf": 0,
+          "gc": 2,
+          "pts": 1,
+          "prob_sum": 1.3711000000000002,
+          "gd": -2,
+          "pos": 3
+        },
+        {
+          "team": "Curaçao",
+          "pj": 3,
+          "pg": 0,
+          "pe": 1,
+          "pp": 2,
+          "gf": 1,
+          "gc": 8,
+          "pts": 1,
+          "prob_sum": 0.2361,
+          "gd": -7,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-14",
+          "home_team": "Germany",
+          "away_team": "Curaçao",
+          "played": true,
+          "prob_H": 0.8574,
+          "prob_D": 0.1075,
+          "prob_A": 0.0351,
+          "home_score": 7,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-14",
+          "home_team": "Ivory Coast",
+          "away_team": "Ecuador",
+          "played": true,
+          "prob_H": 0.2956,
+          "prob_D": 0.354,
+          "prob_A": 0.3503,
+          "home_score": 1,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-20",
+          "home_team": "Germany",
+          "away_team": "Ivory Coast",
+          "played": true,
+          "prob_H": 0.6997,
+          "prob_D": 0.1949,
+          "prob_A": 0.1055,
+          "home_score": 2,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-20",
+          "home_team": "Ecuador",
+          "away_team": "Curaçao",
+          "played": true,
+          "prob_H": 0.7718,
+          "prob_D": 0.1676,
+          "prob_A": 0.0607,
+          "home_score": 0,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-25",
+          "home_team": "Curaçao",
+          "away_team": "Ivory Coast",
+          "played": false,
+          "prob_H": 0.1403,
+          "prob_D": 0.1635,
+          "prob_A": 0.6962,
+          "predicted": "A"
+        },
+        {
+          "date": "2026-06-25",
+          "home_team": "Ecuador",
+          "away_team": "Germany",
+          "played": false,
+          "prob_H": 0.249,
+          "prob_D": 0.3135,
+          "prob_A": 0.4376,
+          "predicted": "A"
+        }
+      ]
+    },
+    {
+      "label": "Grupo F",
+      "standings": [
+        {
+          "team": "Netherlands",
+          "pj": 3,
+          "pg": 2,
+          "pe": 1,
+          "pp": 0,
+          "gf": 8,
+          "gc": 3,
+          "pts": 7,
+          "prob_sum": 1.7389000000000001,
+          "gd": 5,
+          "pos": 1
+        },
+        {
+          "team": "Japan",
+          "pj": 3,
+          "pg": 2,
+          "pe": 1,
+          "pp": 0,
+          "gf": 7,
+          "gc": 2,
+          "pts": 7,
+          "prob_sum": 1.6766,
+          "gd": 5,
+          "pos": 2
+        },
+        {
+          "team": "Sweden",
+          "pj": 3,
+          "pg": 1,
+          "pe": 0,
+          "pp": 2,
+          "gf": 6,
+          "gc": 7,
+          "pts": 3,
+          "prob_sum": 1.0196,
+          "gd": -1,
+          "pos": 3
+        },
+        {
+          "team": "Tunisia",
+          "pj": 3,
+          "pg": 0,
+          "pe": 0,
+          "pp": 3,
+          "gf": 1,
+          "gc": 10,
+          "pts": 0,
+          "prob_sum": 0.3245,
+          "gd": -9,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-14",
+          "home_team": "Netherlands",
+          "away_team": "Japan",
+          "played": true,
+          "prob_H": 0.4023,
+          "prob_D": 0.3188,
+          "prob_A": 0.2789,
+          "home_score": 2,
+          "away_score": 2
+        },
+        {
+          "date": "2026-06-14",
+          "home_team": "Sweden",
+          "away_team": "Tunisia",
+          "played": true,
+          "prob_H": 0.6682,
+          "prob_D": 0.1796,
+          "prob_A": 0.1522,
+          "home_score": 5,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-20",
+          "home_team": "Netherlands",
+          "away_team": "Sweden",
+          "played": true,
+          "prob_H": 0.5492,
+          "prob_D": 0.2626,
+          "prob_A": 0.1882,
+          "home_score": 5,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-20",
+          "home_team": "Tunisia",
+          "away_team": "Japan",
+          "played": true,
+          "prob_H": 0.0869,
+          "prob_D": 0.1564,
+          "prob_A": 0.7567,
+          "home_score": 0,
+          "away_score": 4
+        },
+        {
+          "date": "2026-06-25",
+          "home_team": "Japan",
+          "away_team": "Sweden",
+          "played": false,
+          "prob_H": 0.641,
+          "prob_D": 0.1958,
+          "prob_A": 0.1632,
+          "predicted": "H"
+        },
+        {
+          "date": "2026-06-25",
+          "home_team": "Tunisia",
+          "away_team": "Netherlands",
+          "played": false,
+          "prob_H": 0.0854,
+          "prob_D": 0.1272,
+          "prob_A": 0.7874,
+          "predicted": "A"
+        }
+      ]
+    },
+    {
+      "label": "Grupo G",
+      "standings": [
+        {
+          "team": "Iran",
+          "pj": 3,
+          "pg": 1,
+          "pe": 2,
+          "pp": 0,
+          "gf": 3,
+          "gc": 2,
+          "pts": 5,
+          "prob_sum": 1.1153,
+          "gd": 1,
+          "pos": 1
+        },
+        {
+          "team": "Belgium",
+          "pj": 3,
+          "pg": 1,
+          "pe": 2,
+          "pp": 0,
+          "gf": 2,
+          "gc": 1,
+          "pts": 5,
+          "prob_sum": 1.6749,
+          "gd": 1,
+          "pos": 2
+        },
+        {
+          "team": "Egypt",
+          "pj": 3,
+          "pg": 1,
+          "pe": 1,
+          "pp": 1,
+          "gf": 4,
+          "gc": 3,
+          "pts": 4,
+          "prob_sum": 1.0015,
+          "gd": 1,
+          "pos": 3
+        },
+        {
+          "team": "New Zealand",
+          "pj": 3,
+          "pg": 0,
+          "pe": 1,
+          "pp": 2,
+          "gf": 3,
+          "gc": 6,
+          "pts": 1,
+          "prob_sum": 0.4463,
+          "gd": -3,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-15",
+          "home_team": "Belgium",
+          "away_team": "Egypt",
+          "played": true,
+          "prob_H": 0.5082,
+          "prob_D": 0.3097,
+          "prob_A": 0.1821,
+          "home_score": 1,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-15",
+          "home_team": "Iran",
+          "away_team": "New Zealand",
+          "played": true,
+          "prob_H": 0.5808,
+          "prob_D": 0.2829,
+          "prob_A": 0.1363,
+          "home_score": 2,
+          "away_score": 2
+        },
+        {
+          "date": "2026-06-21",
+          "home_team": "Belgium",
+          "away_team": "Iran",
+          "played": true,
+          "prob_H": 0.5225,
+          "prob_D": 0.2828,
+          "prob_A": 0.1948,
+          "home_score": 0,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-21",
+          "home_team": "New Zealand",
+          "away_team": "Egypt",
+          "played": true,
+          "prob_H": 0.2067,
+          "prob_D": 0.3113,
+          "prob_A": 0.482,
+          "home_score": 1,
+          "away_score": 3
+        },
+        {
+          "date": "2026-06-26",
+          "home_team": "Egypt",
+          "away_team": "Iran",
+          "played": false,
+          "prob_H": 0.3374,
+          "prob_D": 0.323,
+          "prob_A": 0.3397,
+          "predicted": "A"
+        },
+        {
+          "date": "2026-06-26",
+          "home_team": "New Zealand",
+          "away_team": "Belgium",
+          "played": false,
+          "prob_H": 0.1033,
+          "prob_D": 0.2525,
+          "prob_A": 0.6442,
+          "predicted": "A"
+        }
+      ]
+    },
+    {
+      "label": "Grupo H",
+      "standings": [
+        {
+          "team": "Spain",
+          "pj": 3,
+          "pg": 2,
+          "pe": 1,
+          "pp": 0,
+          "gf": 5,
+          "gc": 0,
+          "pts": 7,
+          "prob_sum": 2.4210000000000003,
+          "gd": 5,
+          "pos": 1
+        },
+        {
+          "team": "Saudi Arabia",
+          "pj": 3,
+          "pg": 1,
+          "pe": 1,
+          "pp": 1,
+          "gf": 2,
+          "gc": 5,
+          "pts": 4,
+          "prob_sum": 0.5229999999999999,
+          "gd": -3,
+          "pos": 2
+        },
+        {
+          "team": "Uruguay",
+          "pj": 3,
+          "pg": 0,
+          "pe": 2,
+          "pp": 1,
+          "gf": 3,
+          "gc": 4,
+          "pts": 2,
+          "prob_sum": 1.3263,
+          "gd": -1,
+          "pos": 3
+        },
+        {
+          "team": "Cape Verde",
+          "pj": 3,
+          "pg": 0,
+          "pe": 2,
+          "pp": 1,
+          "gf": 2,
+          "gc": 3,
+          "pts": 2,
+          "prob_sum": 0.44970000000000004,
+          "gd": -1,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-15",
+          "home_team": "Spain",
+          "away_team": "Cape Verde",
+          "played": true,
+          "prob_H": 0.8836,
+          "prob_D": 0.0821,
+          "prob_A": 0.0344,
+          "home_score": 0,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-15",
+          "home_team": "Saudi Arabia",
+          "away_team": "Uruguay",
+          "played": true,
+          "prob_H": 0.1387,
+          "prob_D": 0.2634,
+          "prob_A": 0.5979,
+          "home_score": 1,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-21",
+          "home_team": "Spain",
+          "away_team": "Saudi Arabia",
+          "played": true,
+          "prob_H": 0.8836,
+          "prob_D": 0.0821,
+          "prob_A": 0.0344,
+          "home_score": 4,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-21",
+          "home_team": "Uruguay",
+          "away_team": "Cape Verde",
+          "played": true,
+          "prob_H": 0.6216,
+          "prob_D": 0.2814,
+          "prob_A": 0.097,
+          "home_score": 2,
+          "away_score": 2
+        },
+        {
+          "date": "2026-06-26",
+          "home_team": "Cape Verde",
+          "away_team": "Saudi Arabia",
+          "played": false,
+          "prob_H": 0.3183,
+          "prob_D": 0.3318,
+          "prob_A": 0.3499,
+          "predicted": "A"
+        },
+        {
+          "date": "2026-06-26",
+          "home_team": "Uruguay",
+          "away_team": "Spain",
+          "played": false,
+          "prob_H": 0.1068,
+          "prob_D": 0.2394,
+          "prob_A": 0.6538,
+          "predicted": "A"
+        }
+      ]
+    },
+    {
+      "label": "Grupo I",
       "standings": [
         {
           "team": "France",
@@ -1354,125 +1108,371 @@
       ]
     },
     {
-      "label": "Grupo 12",
+      "label": "Grupo J",
       "standings": [
         {
-          "team": "Netherlands",
+          "team": "Argentina",
           "pj": 3,
-          "pg": 2,
-          "pe": 1,
+          "pg": 3,
+          "pe": 0,
           "pp": 0,
-          "gf": 8,
-          "gc": 3,
-          "pts": 7,
-          "prob_sum": 1.7389000000000001,
-          "gd": 5,
+          "gf": 6,
+          "gc": 0,
+          "pts": 9,
+          "prob_sum": 2.1913,
+          "gd": 6,
           "pos": 1
         },
         {
-          "team": "Japan",
+          "team": "Austria",
           "pj": 3,
           "pg": 2,
-          "pe": 1,
-          "pp": 0,
-          "gf": 7,
-          "gc": 2,
-          "pts": 7,
-          "prob_sum": 1.6766,
-          "gd": 5,
+          "pe": 0,
+          "pp": 1,
+          "gf": 4,
+          "gc": 3,
+          "pts": 6,
+          "prob_sum": 1.0969000000000002,
+          "gd": 1,
           "pos": 2
         },
         {
-          "team": "Sweden",
+          "team": "Algeria",
           "pj": 3,
           "pg": 1,
           "pe": 0,
           "pp": 2,
-          "gf": 6,
-          "gc": 7,
+          "gf": 2,
+          "gc": 5,
           "pts": 3,
-          "prob_sum": 1.0196,
-          "gd": -1,
+          "prob_sum": 1.0285,
+          "gd": -3,
           "pos": 3
         },
         {
-          "team": "Tunisia",
+          "team": "Jordan",
           "pj": 3,
           "pg": 0,
           "pe": 0,
           "pp": 3,
-          "gf": 1,
-          "gc": 10,
+          "gf": 2,
+          "gc": 6,
           "pts": 0,
-          "prob_sum": 0.3245,
-          "gd": -9,
+          "prob_sum": 0.3894,
+          "gd": -4,
           "pos": 4
         }
       ],
       "matches": [
         {
-          "date": "2026-06-14",
-          "home_team": "Netherlands",
-          "away_team": "Japan",
+          "date": "2026-06-16",
+          "home_team": "Argentina",
+          "away_team": "Algeria",
           "played": true,
-          "prob_H": 0.4023,
-          "prob_D": 0.3188,
-          "prob_A": 0.2789,
+          "prob_H": 0.6533,
+          "prob_D": 0.2282,
+          "prob_A": 0.1185,
+          "home_score": 3,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-16",
+          "home_team": "Austria",
+          "away_team": "Jordan",
+          "played": true,
+          "prob_H": 0.6064,
+          "prob_D": 0.2347,
+          "prob_A": 0.1589,
+          "home_score": 3,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-22",
+          "home_team": "Argentina",
+          "away_team": "Austria",
+          "played": true,
+          "prob_H": 0.7369,
+          "prob_D": 0.1887,
+          "prob_A": 0.0744,
           "home_score": 2,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-22",
+          "home_team": "Jordan",
+          "away_team": "Algeria",
+          "played": true,
+          "prob_H": 0.1571,
+          "prob_D": 0.2219,
+          "prob_A": 0.621,
+          "home_score": 1,
           "away_score": 2
         },
         {
-          "date": "2026-06-14",
-          "home_team": "Sweden",
-          "away_team": "Tunisia",
-          "played": true,
-          "prob_H": 0.6682,
-          "prob_D": 0.1796,
-          "prob_A": 0.1522,
-          "home_score": 5,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-20",
-          "home_team": "Netherlands",
-          "away_team": "Sweden",
-          "played": true,
-          "prob_H": 0.5492,
-          "prob_D": 0.2626,
-          "prob_A": 0.1882,
-          "home_score": 5,
-          "away_score": 1
-        },
-        {
-          "date": "2026-06-20",
-          "home_team": "Tunisia",
-          "away_team": "Japan",
-          "played": true,
-          "prob_H": 0.0869,
-          "prob_D": 0.1564,
-          "prob_A": 0.7567,
-          "home_score": 0,
-          "away_score": 4
-        },
-        {
-          "date": "2026-06-25",
-          "home_team": "Japan",
-          "away_team": "Sweden",
+          "date": "2026-06-27",
+          "home_team": "Algeria",
+          "away_team": "Austria",
           "played": false,
-          "prob_H": 0.641,
-          "prob_D": 0.1958,
-          "prob_A": 0.1632,
-          "predicted": "H"
-        },
-        {
-          "date": "2026-06-25",
-          "home_team": "Tunisia",
-          "away_team": "Netherlands",
-          "played": false,
-          "prob_H": 0.0854,
-          "prob_D": 0.1272,
-          "prob_A": 0.7874,
+          "prob_H": 0.289,
+          "prob_D": 0.2949,
+          "prob_A": 0.4161,
           "predicted": "A"
+        },
+        {
+          "date": "2026-06-27",
+          "home_team": "Jordan",
+          "away_team": "Argentina",
+          "played": false,
+          "prob_H": 0.0734,
+          "prob_D": 0.1256,
+          "prob_A": 0.8011,
+          "predicted": "A"
+        }
+      ]
+    },
+    {
+      "label": "Grupo K",
+      "standings": [
+        {
+          "team": "Portugal",
+          "pj": 3,
+          "pg": 2,
+          "pe": 1,
+          "pp": 0,
+          "gf": 7,
+          "gc": 1,
+          "pts": 7,
+          "prob_sum": 1.8285,
+          "gd": 6,
+          "pos": 1
+        },
+        {
+          "team": "Colombia",
+          "pj": 3,
+          "pg": 2,
+          "pe": 0,
+          "pp": 1,
+          "gf": 4,
+          "gc": 2,
+          "pts": 6,
+          "prob_sum": 1.6672000000000002,
+          "gd": 2,
+          "pos": 2
+        },
+        {
+          "team": "DR Congo",
+          "pj": 3,
+          "pg": 1,
+          "pe": 1,
+          "pp": 1,
+          "gf": 2,
+          "gc": 2,
+          "pts": 4,
+          "prob_sum": 0.5524,
+          "gd": 0,
+          "pos": 3
+        },
+        {
+          "team": "Uzbekistan",
+          "pj": 3,
+          "pg": 0,
+          "pe": 0,
+          "pp": 3,
+          "gf": 1,
+          "gc": 9,
+          "pts": 0,
+          "prob_sum": 0.4984,
+          "gd": -8,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-17",
+          "home_team": "Portugal",
+          "away_team": "DR Congo",
+          "played": true,
+          "prob_H": 0.7183,
+          "prob_D": 0.2017,
+          "prob_A": 0.08,
+          "home_score": 1,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-17",
+          "home_team": "Uzbekistan",
+          "away_team": "Colombia",
+          "played": true,
+          "prob_H": 0.0843,
+          "prob_D": 0.1487,
+          "prob_A": 0.767,
+          "home_score": 1,
+          "away_score": 3
+        },
+        {
+          "date": "2026-06-23",
+          "home_team": "Portugal",
+          "away_team": "Uzbekistan",
+          "played": true,
+          "prob_H": 0.7008,
+          "prob_D": 0.2177,
+          "prob_A": 0.0815,
+          "home_score": 5,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-23",
+          "home_team": "Colombia",
+          "away_team": "DR Congo",
+          "played": true,
+          "prob_H": 0.6428,
+          "prob_D": 0.2201,
+          "prob_A": 0.1371,
+          "home_score": 1,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-27",
+          "home_team": "Colombia",
+          "away_team": "Portugal",
+          "played": false,
+          "prob_H": 0.2574,
+          "prob_D": 0.3332,
+          "prob_A": 0.4094,
+          "predicted": "A"
+        },
+        {
+          "date": "2026-06-27",
+          "home_team": "DR Congo",
+          "away_team": "Uzbekistan",
+          "played": false,
+          "prob_H": 0.3353,
+          "prob_D": 0.332,
+          "prob_A": 0.3326,
+          "predicted": "H"
+        }
+      ]
+    },
+    {
+      "label": "Grupo L",
+      "standings": [
+        {
+          "team": "England",
+          "pj": 3,
+          "pg": 2,
+          "pe": 1,
+          "pp": 0,
+          "gf": 5,
+          "gc": 2,
+          "pts": 7,
+          "prob_sum": 2.1912000000000003,
+          "gd": 3,
+          "pos": 1
+        },
+        {
+          "team": "Croatia",
+          "pj": 3,
+          "pg": 2,
+          "pe": 0,
+          "pp": 1,
+          "gf": 4,
+          "gc": 4,
+          "pts": 6,
+          "prob_sum": 1.5234999999999999,
+          "gd": 0,
+          "pos": 2
+        },
+        {
+          "team": "Ghana",
+          "pj": 3,
+          "pg": 1,
+          "pe": 1,
+          "pp": 1,
+          "gf": 1,
+          "gc": 1,
+          "pts": 4,
+          "prob_sum": 0.4222,
+          "gd": 0,
+          "pos": 3
+        },
+        {
+          "team": "Panama",
+          "pj": 3,
+          "pg": 0,
+          "pe": 0,
+          "pp": 3,
+          "gf": 0,
+          "gc": 3,
+          "pts": 0,
+          "prob_sum": 0.6328,
+          "gd": -3,
+          "pos": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-06-17",
+          "home_team": "England",
+          "away_team": "Croatia",
+          "played": true,
+          "prob_H": 0.6196,
+          "prob_D": 0.1975,
+          "prob_A": 0.183,
+          "home_score": 4,
+          "away_score": 2
+        },
+        {
+          "date": "2026-06-17",
+          "home_team": "Ghana",
+          "away_team": "Panama",
+          "played": true,
+          "prob_H": 0.2394,
+          "prob_D": 0.3038,
+          "prob_A": 0.4568,
+          "home_score": 1,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-23",
+          "home_team": "England",
+          "away_team": "Ghana",
+          "played": true,
+          "prob_H": 0.7996,
+          "prob_D": 0.1354,
+          "prob_A": 0.0649,
+          "home_score": 0,
+          "away_score": 0
+        },
+        {
+          "date": "2026-06-23",
+          "home_team": "Panama",
+          "away_team": "Croatia",
+          "played": true,
+          "prob_H": 0.117,
+          "prob_D": 0.2001,
+          "prob_A": 0.6829,
+          "home_score": 0,
+          "away_score": 1
+        },
+        {
+          "date": "2026-06-27",
+          "home_team": "Panama",
+          "away_team": "England",
+          "played": false,
+          "prob_H": 0.059,
+          "prob_D": 0.169,
+          "prob_A": 0.772,
+          "predicted": "A"
+        },
+        {
+          "date": "2026-06-27",
+          "home_team": "Croatia",
+          "away_team": "Ghana",
+          "played": false,
+          "prob_H": 0.6576,
+          "prob_D": 0.2245,
+          "prob_A": 0.1179,
+          "predicted": "H"
         }
       ]
     }
@@ -1484,8 +1484,8 @@
         {
           "team1": "Argentina",
           "team2": "Australia",
-          "group1": "Grupo 1",
-          "group2": "Grupo 2",
+          "group1": "Grupo J",
+          "group2": "Grupo D",
           "prob1": 0.8253,
           "prob2": 0.1747,
           "winner": "Argentina"
@@ -1493,8 +1493,8 @@
         {
           "team1": "Spain",
           "team2": "United States",
-          "group1": "Grupo 6",
-          "group2": "Grupo 2",
+          "group1": "Grupo H",
+          "group2": "Grupo D",
           "prob1": 0.7586,
           "prob2": 0.2414,
           "winner": "Spain"
@@ -1502,8 +1502,8 @@
         {
           "team1": "France",
           "team2": "Austria",
-          "group1": "Grupo 11",
-          "group2": "Grupo 1",
+          "group1": "Grupo I",
+          "group2": "Grupo J",
           "prob1": 0.8022,
           "prob2": 0.1978,
           "winner": "France"
@@ -1511,8 +1511,8 @@
         {
           "team1": "England",
           "team2": "Algeria",
-          "group1": "Grupo 8",
-          "group2": "Grupo 1",
+          "group1": "Grupo L",
+          "group2": "Grupo J",
           "prob1": 0.6901,
           "prob2": 0.3099,
           "winner": "England"
@@ -1520,8 +1520,8 @@
         {
           "team1": "Colombia",
           "team2": "South Korea",
-          "group1": "Grupo 7",
-          "group2": "Grupo 10",
+          "group1": "Grupo K",
+          "group2": "Grupo A",
           "prob1": 0.6859,
           "prob2": 0.3141,
           "winner": "Colombia"
@@ -1529,8 +1529,8 @@
         {
           "team1": "Brazil",
           "team2": "Iran",
-          "group1": "Grupo 5",
-          "group2": "Grupo 3",
+          "group1": "Grupo C",
+          "group2": "Grupo G",
           "prob1": 0.7926,
           "prob2": 0.2074,
           "winner": "Brazil"
@@ -1538,8 +1538,8 @@
         {
           "team1": "Portugal",
           "team2": "Canada",
-          "group1": "Grupo 7",
-          "group2": "Grupo 4",
+          "group1": "Grupo K",
+          "group2": "Grupo B",
           "prob1": 0.7417,
           "prob2": 0.2583,
           "winner": "Portugal"
@@ -1547,8 +1547,8 @@
         {
           "team1": "Netherlands",
           "team2": "Senegal",
-          "group1": "Grupo 12",
-          "group2": "Grupo 11",
+          "group1": "Grupo F",
+          "group2": "Grupo I",
           "prob1": 0.6395,
           "prob2": 0.3605,
           "winner": "Netherlands"
@@ -1556,8 +1556,8 @@
         {
           "team1": "Germany",
           "team2": "Scotland",
-          "group1": "Grupo 9",
-          "group2": "Grupo 5",
+          "group1": "Grupo E",
+          "group2": "Grupo C",
           "prob1": 0.8099,
           "prob2": 0.1901,
           "winner": "Germany"
@@ -1565,8 +1565,8 @@
         {
           "team1": "Japan",
           "team2": "Egypt",
-          "group1": "Grupo 12",
-          "group2": "Grupo 3",
+          "group1": "Grupo F",
+          "group2": "Grupo G",
           "prob1": 0.6417,
           "prob2": 0.3583,
           "winner": "Japan"
@@ -1574,8 +1574,8 @@
         {
           "team1": "Morocco",
           "team2": "Ivory Coast",
-          "group1": "Grupo 5",
-          "group2": "Grupo 9",
+          "group1": "Grupo C",
+          "group2": "Grupo E",
           "prob1": 0.6429,
           "prob2": 0.3571,
           "winner": "Morocco"
@@ -1583,8 +1583,8 @@
         {
           "team1": "Norway",
           "team2": "Sweden",
-          "group1": "Grupo 11",
-          "group2": "Grupo 12",
+          "group1": "Grupo I",
+          "group2": "Grupo F",
           "prob1": 0.754,
           "prob2": 0.246,
           "winner": "Norway"
@@ -1592,8 +1592,8 @@
         {
           "team1": "Mexico",
           "team2": "DR Congo",
-          "group1": "Grupo 10",
-          "group2": "Grupo 7",
+          "group1": "Grupo A",
+          "group2": "Grupo K",
           "prob1": 0.767,
           "prob2": 0.233,
           "winner": "Mexico"
@@ -1601,8 +1601,8 @@
         {
           "team1": "Croatia",
           "team2": "Saudi Arabia",
-          "group1": "Grupo 8",
-          "group2": "Grupo 6",
+          "group1": "Grupo L",
+          "group2": "Grupo H",
           "prob1": 0.782,
           "prob2": 0.218,
           "winner": "Croatia"
@@ -1610,8 +1610,8 @@
         {
           "team1": "Switzerland",
           "team2": "Ghana",
-          "group1": "Grupo 4",
-          "group2": "Grupo 8",
+          "group1": "Grupo B",
+          "group2": "Grupo L",
           "prob1": 0.7841,
           "prob2": 0.2159,
           "winner": "Switzerland"
@@ -1619,8 +1619,8 @@
         {
           "team1": "Belgium",
           "team2": "Bosnia and Herzegovina",
-          "group1": "Grupo 3",
-          "group2": "Grupo 4",
+          "group1": "Grupo G",
+          "group2": "Grupo B",
           "prob1": 0.8297,
           "prob2": 0.1703,
           "winner": "Belgium"
@@ -1633,8 +1633,8 @@
         {
           "team1": "Argentina",
           "team2": "Spain",
-          "group1": "Grupo 1",
-          "group2": "Grupo 6",
+          "group1": "Grupo J",
+          "group2": "Grupo H",
           "prob1": 0.553,
           "prob2": 0.447,
           "winner": "Argentina"
@@ -1642,8 +1642,8 @@
         {
           "team1": "France",
           "team2": "England",
-          "group1": "Grupo 11",
-          "group2": "Grupo 8",
+          "group1": "Grupo I",
+          "group2": "Grupo L",
           "prob1": 0.6375,
           "prob2": 0.3625,
           "winner": "France"
@@ -1651,8 +1651,8 @@
         {
           "team1": "Colombia",
           "team2": "Brazil",
-          "group1": "Grupo 7",
-          "group2": "Grupo 5",
+          "group1": "Grupo K",
+          "group2": "Grupo C",
           "prob1": 0.4256,
           "prob2": 0.5744,
           "winner": "Brazil"
@@ -1660,8 +1660,8 @@
         {
           "team1": "Portugal",
           "team2": "Netherlands",
-          "group1": "Grupo 7",
-          "group2": "Grupo 12",
+          "group1": "Grupo K",
+          "group2": "Grupo F",
           "prob1": 0.5133,
           "prob2": 0.4867,
           "winner": "Portugal"
@@ -1669,8 +1669,8 @@
         {
           "team1": "Germany",
           "team2": "Japan",
-          "group1": "Grupo 9",
-          "group2": "Grupo 12",
+          "group1": "Grupo E",
+          "group2": "Grupo F",
           "prob1": 0.6482,
           "prob2": 0.3518,
           "winner": "Germany"
@@ -1678,8 +1678,8 @@
         {
           "team1": "Morocco",
           "team2": "Norway",
-          "group1": "Grupo 5",
-          "group2": "Grupo 11",
+          "group1": "Grupo C",
+          "group2": "Grupo I",
           "prob1": 0.4716,
           "prob2": 0.5284,
           "winner": "Norway"
@@ -1687,8 +1687,8 @@
         {
           "team1": "Mexico",
           "team2": "Croatia",
-          "group1": "Grupo 10",
-          "group2": "Grupo 8",
+          "group1": "Grupo A",
+          "group2": "Grupo L",
           "prob1": 0.4386,
           "prob2": 0.5614,
           "winner": "Croatia"
@@ -1696,8 +1696,8 @@
         {
           "team1": "Switzerland",
           "team2": "Belgium",
-          "group1": "Grupo 4",
-          "group2": "Grupo 3",
+          "group1": "Grupo B",
+          "group2": "Grupo G",
           "prob1": 0.4756,
           "prob2": 0.5244,
           "winner": "Belgium"
@@ -1710,8 +1710,8 @@
         {
           "team1": "Argentina",
           "team2": "France",
-          "group1": "Grupo 1",
-          "group2": "Grupo 11",
+          "group1": "Grupo J",
+          "group2": "Grupo I",
           "prob1": 0.5572,
           "prob2": 0.4428,
           "winner": "Argentina"
@@ -1719,8 +1719,8 @@
         {
           "team1": "Brazil",
           "team2": "Portugal",
-          "group1": "Grupo 5",
-          "group2": "Grupo 7",
+          "group1": "Grupo C",
+          "group2": "Grupo K",
           "prob1": 0.5185,
           "prob2": 0.4815,
           "winner": "Brazil"
@@ -1728,8 +1728,8 @@
         {
           "team1": "Germany",
           "team2": "Norway",
-          "group1": "Grupo 9",
-          "group2": "Grupo 11",
+          "group1": "Grupo E",
+          "group2": "Grupo I",
           "prob1": 0.6181,
           "prob2": 0.3819,
           "winner": "Germany"
@@ -1737,8 +1737,8 @@
         {
           "team1": "Croatia",
           "team2": "Belgium",
-          "group1": "Grupo 8",
-          "group2": "Grupo 3",
+          "group1": "Grupo L",
+          "group2": "Grupo G",
           "prob1": 0.4802,
           "prob2": 0.5198,
           "winner": "Belgium"
@@ -1751,8 +1751,8 @@
         {
           "team1": "Argentina",
           "team2": "Brazil",
-          "group1": "Grupo 1",
-          "group2": "Grupo 5",
+          "group1": "Grupo J",
+          "group2": "Grupo C",
           "prob1": 0.6012,
           "prob2": 0.3988,
           "winner": "Argentina"
@@ -1760,8 +1760,8 @@
         {
           "team1": "Germany",
           "team2": "Belgium",
-          "group1": "Grupo 9",
-          "group2": "Grupo 3",
+          "group1": "Grupo E",
+          "group2": "Grupo G",
           "prob1": 0.7126,
           "prob2": 0.2874,
           "winner": "Germany"
@@ -1774,8 +1774,8 @@
         {
           "team1": "Argentina",
           "team2": "Germany",
-          "group1": "Grupo 1",
-          "group2": "Grupo 9",
+          "group1": "Grupo J",
+          "group2": "Grupo E",
           "prob1": 0.7347,
           "prob2": 0.2653,
           "winner": "Argentina"
