@@ -146,6 +146,43 @@ def eval_poisson(features, label="poisson"):
     )
 
 
+def eval_recency_and_tuning():
+    """7-9. Pondera partidos recientes más que los antiguos, y ajusta hiperparámetros."""
+    df = load_data()
+    train_df = df[df["result"].notna() & (df["result"] != "")]
+    wc2026 = train_df[
+        (train_df["tournament"] == "FIFA World Cup") & (train_df["date"] >= WORLD_CUP_2026_START)
+    ]
+    time_train, time_test = time_holdout(train_df)
+
+    years_ago = (pd.to_datetime("2025-01-01") - pd.to_datetime(time_train["date"])).dt.days / 365
+    recency_weight = np.exp(-years_ago / 15)  # vida media ~15 años
+
+    for params, label in [
+        ({"max_iter": 200, "random_state": 42}, "7. baseline (referencia)"),
+        ({"max_iter": 200, "random_state": 42}, "8. + peso por recencia"),
+        (
+            {"max_iter": 300, "max_depth": 6, "learning_rate": 0.05, "random_state": 42},
+            "9. hiperparams ajustados",
+        ),
+    ]:
+        model = HistGradientBoostingClassifier(**params)
+        sw = recency_weight.values if "recencia" in label else None
+        features = BASE_FEATURES + GOAL_FEATURES
+        model.fit(time_train[features], time_train["result"], sample_weight=sw)
+
+        time_acc = accuracy_score(time_test["result"], model.predict(time_test[features]))
+        wc_acc = (
+            accuracy_score(wc2026["result"], model.predict(wc2026[features]))
+            if not wc2026.empty
+            else None
+        )
+        print(
+            f"{label:28s} time_acc={time_acc:.3f}  "
+            f"wc2026_acc={wc_acc:.3f} ({int(wc_acc * len(wc2026))}/{len(wc2026)})"
+        )
+
+
 def main():
     eval_classifier(BASE_FEATURES, label="1. baseline (split temporal)")
     eval_classifier(BASE_FEATURES + GOAL_FEATURES, label="2. + goles recientes")
@@ -157,6 +194,7 @@ def main():
     )
     eval_poisson(BASE_FEATURES, label="5. poisson (goles)")
     eval_poisson(BASE_FEATURES + GOAL_FEATURES, label="6. poisson + goles")
+    eval_recency_and_tuning()
 
 
 if __name__ == "__main__":
