@@ -34,7 +34,8 @@ export async function POST(req: NextRequest) {
   try {
     const { stdout, stderr } = await execFileAsync("node", [scriptPath], {
       cwd: root,
-      timeout: 120_000,
+      timeout: 15 * 60_000, // Transfermarkt con rate limiting conservador puede tardar varios minutos
+      maxBuffer: 10 * 1024 * 1024,
     });
 
     const outputPath = path.join(root, source.outputFile);
