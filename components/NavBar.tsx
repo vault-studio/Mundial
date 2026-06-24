@@ -8,6 +8,7 @@ const LINKS = [
   { href: "/extraer", label: "Extraer" },
   { href: "/unificar", label: "Unificar" },
   { href: "/predicciones", label: "Predicciones" },
+  { href: "/resultados", label: "Resultados" },
 ];
 
 export default function NavBar() {

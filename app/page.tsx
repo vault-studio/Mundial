@@ -29,6 +29,13 @@ const SECTIONS: Section[] = [
       "Probabilidades de victoria/empate/derrota para los partidos del Mundial 2026, calculadas por el modelo entrenado.",
     accent: "from-amber-400/20 to-amber-400/0",
   },
+  {
+    href: "/resultados",
+    title: "Resultados",
+    description:
+      "Partidos del Mundial 2026 ya jugados: resultado real, predicción del modelo y si acertó o no.",
+    accent: "from-rose-400/20 to-rose-400/0",
+  },
 ];
 
 export default function Home() {

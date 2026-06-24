@@ -111,6 +111,8 @@ def main():
                 "squad_value_home": sv_home or "",
                 "squad_value_away": sv_away or "",
                 "squad_value_diff": (sv_home - sv_away) if sv_home and sv_away else "",
+                "home_score": hs if has_score else "",
+                "away_score": as_ if has_score else "",
                 "result": result or "",
             }
         )
