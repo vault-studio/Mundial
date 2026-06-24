@@ -39,45 +39,46 @@ export default function ExtraerPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50 px-6 py-12 dark:bg-black">
+    <div className="px-6 py-10">
       <div className="mx-auto max-w-3xl">
-        <h1 className="text-2xl font-semibold text-black dark:text-zinc-50">Extraer datos</h1>
-        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+        <h1 className="text-3xl font-bold text-white">
+          <span className="text-gradient">Extraer datos</span>
+        </h1>
+        <p className="mt-2 text-sm text-white/60">
           Cada fuente genera su propio CSV en <code>data/raw/</code>. Solo funciona en local.
         </p>
 
-        <div className="mt-8 flex flex-col gap-4">
+        <div className="mt-8 grid gap-4">
           {SOURCES.map((source) => {
             const st = status[source.id];
             return (
-              <div
-                key={source.id}
-                className="flex items-center justify-between rounded-lg border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900"
-              >
-                <div>
-                  <a
-                    href={source.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-medium text-black underline dark:text-zinc-50"
+              <div key={source.id} className="glass glass-hover rounded-2xl p-5">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-white underline-offset-4 hover:underline"
+                    >
+                      {source.name}
+                    </a>
+                    <p className="mt-1 text-sm text-white/60">{source.description}</p>
+                    {st?.error && <p className="mt-2 text-sm text-rose-300">{st.error}</p>}
+                    {st?.rows !== undefined && !st.error && (
+                      <p className="mt-2 text-sm text-emerald-300">
+                        {st.rows} filas guardadas en {st.outputFile}
+                      </p>
+                    )}
+                  </div>
+                  <button
+                    onClick={() => handleExtract(source.id)}
+                    disabled={st?.loading}
+                    className="glow-accent shrink-0 rounded-full bg-emerald-400/90 px-5 py-2 text-sm font-semibold text-emerald-950 transition-all hover:bg-emerald-300 disabled:opacity-50"
                   >
-                    {source.name}
-                  </a>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400">{source.description}</p>
-                  {st?.error && <p className="mt-1 text-sm text-red-600">{st.error}</p>}
-                  {st?.rows !== undefined && !st.error && (
-                    <p className="mt-1 text-sm text-green-600">
-                      {st.rows} filas guardadas en {st.outputFile}
-                    </p>
-                  )}
+                    {st?.loading ? "Extrayendo..." : "Extraer"}
+                  </button>
                 </div>
-                <button
-                  onClick={() => handleExtract(source.id)}
-                  disabled={st?.loading}
-                  className="rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-colors hover:bg-[#383838] disabled:opacity-50 dark:hover:bg-[#ccc]"
-                >
-                  {st?.loading ? "Extrayendo..." : "Extraer"}
-                </button>
               </div>
             );
           })}
