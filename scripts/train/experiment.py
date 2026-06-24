@@ -44,6 +44,7 @@ GOAL_FEATURES = [
     "win_streak_home",
     "win_streak_away",
 ]
+H2H_FEATURES = ["h2h_home_score", "h2h_matches"]
 
 
 def load_data():
@@ -195,6 +196,10 @@ def main():
     eval_poisson(BASE_FEATURES, label="5. poisson (goles)")
     eval_poisson(BASE_FEATURES + GOAL_FEATURES, label="6. poisson + goles")
     eval_recency_and_tuning()
+    eval_classifier(BASE_FEATURES + H2H_FEATURES, label="10. + head-to-head")
+    eval_classifier(
+        BASE_FEATURES + GOAL_FEATURES + H2H_FEATURES, label="11. goles + head-to-head"
+    )
 
 
 if __name__ == "__main__":

@@ -74,6 +74,7 @@ def main():
     recent_goals_for = {}  # team -> list de goles marcados, en orden cronológico
     recent_goals_against = {}  # team -> list de goles recibidos
     win_streak = {}  # team -> racha de victorias consecutivas hasta antes de este partido
+    h2h = {}  # (equipo_A, equipo_B) ordenados alfabéticamente -> [puntos de A en cada cruce]
     rows = []
 
     for m in matches:
@@ -112,6 +113,18 @@ def main():
         streak_home_pre = win_streak[home]
         streak_away_pre = win_streak[away]
 
+        pair_key = tuple(sorted([home, away]))
+        pair_history = h2h.get(pair_key, [])  # puntos (0/1/3) del primer equipo del par, por cruce
+        invert_points = {0: 3, 1: 1, 3: 0}
+        if pair_history:
+            points_for_home = (
+                pair_history if home == pair_key[0] else [invert_points[p] for p in pair_history]
+            )
+            h2h_home_score = sum(points_for_home) / len(points_for_home)
+        else:
+            h2h_home_score = 1.5  # sin historial: neutral (a medio camino entre 0 y 3)
+        h2h_matches = len(pair_history)
+
         has_score = m["home_score"] not in ("", "NA") and m["away_score"] not in ("", "NA")
         result = None
         if has_score:
@@ -144,6 +157,8 @@ def main():
                 "goals_against_away": round(ga_away, 2),
                 "win_streak_home": streak_home_pre,
                 "win_streak_away": streak_away_pre,
+                "h2h_home_score": round(h2h_home_score, 2),
+                "h2h_matches": h2h_matches,
                 "squad_value_home": sv_home or "",
                 "squad_value_away": sv_away or "",
                 "squad_value_diff": (sv_home - sv_away) if sv_home and sv_away else "",
@@ -174,6 +189,9 @@ def main():
 
             win_streak[home] = streak_home_pre + 1 if result == "H" else 0
             win_streak[away] = streak_away_pre + 1 if result == "A" else 0
+
+            points_first = points_home if home == pair_key[0] else points_away
+            h2h.setdefault(pair_key, []).append(points_first)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT, "w", newline="", encoding="utf-8") as f:
