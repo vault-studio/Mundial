@@ -2,6 +2,11 @@
 Entrena un modelo de clasificación (Victoria local / Empate / Victoria visitante)
 con el CSV unificado en data/processed/training_data.csv.
 
+El modelo de producción se entrena SOLO con partidos anteriores al Mundial 2026,
+para que los partidos ya jugados del torneo sean una evaluación real fuera de
+muestra (si se incluyeran en el entrenamiento, "Resultados" mostraría aciertos
+inflados porque el modelo ya los habría visto).
+
 Genera dos salidas para el Mundial 2026:
 - predictions.csv: partidos sin jugar, con las probabilidades del modelo.
 - historico_mundial.csv: partidos ya jugados, con el resultado real, lo que
@@ -13,7 +18,6 @@ from pathlib import Path
 import joblib
 import pandas as pd
 from sklearn.ensemble import HistGradientBoostingClassifier
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -24,6 +28,9 @@ HISTORICO_PATH = ROOT / "data" / "processed" / "historico_mundial.csv"
 
 WORLD_CUP_2026_START = "2026-01-01"
 
+# "+ goles recientes" fue la única mejora que aportó algo real al probarla contra
+# un split temporal (ver scripts/train/experiment.py): peso por torneo y Poisson
+# no mejoraron, así que no se incluyen para no añadir complejidad sin beneficio.
 FEATURES = [
     "elo_home",
     "elo_away",
@@ -31,6 +38,12 @@ FEATURES = [
     "form_home",
     "form_away",
     "neutral",
+    "goals_for_home",
+    "goals_against_home",
+    "goals_for_away",
+    "goals_against_away",
+    "win_streak_home",
+    "win_streak_away",
     "squad_value_home",
     "squad_value_away",
     "squad_value_diff",
@@ -56,27 +69,33 @@ def write_csv(path, rows):
 def main():
     df = load_data()
 
-    train_df = df[df["result"].notna() & (df["result"] != "")]
-    predict_df = df[df["result"].isna() | (df["result"] == "")]
+    has_result = df["result"].notna() & (df["result"] != "")
+    is_wc2026 = (df["tournament"] == "FIFA World Cup") & (df["date"] >= WORLD_CUP_2026_START)
 
-    X = train_df[FEATURES]
-    y = train_df["result"]
+    # Entrenamiento: todo lo anterior al Mundial 2026. Los partidos del propio
+    # torneo se dejan fuera para que la evaluación en /resultados sea honesta.
+    train_df = df[has_result & ~is_wc2026]
+    predict_df = df[~has_result]
+    wc2026_played = df[has_result & is_wc2026]
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.15, random_state=42, stratify=y
-    )
+    # Holdout temporal (último 10% por fecha) solo para reportar accuracy honesta.
+    train_sorted = train_df.sort_values("date")
+    cutoff = int(len(train_sorted) * 0.9)
+    eval_train, eval_test = train_sorted.iloc[:cutoff], train_sorted.iloc[cutoff:]
 
+    eval_model = HistGradientBoostingClassifier(max_iter=200, random_state=42)
+    eval_model.fit(eval_train[FEATURES], eval_train["result"])
+    y_pred = eval_model.predict(eval_test[FEATURES])
+    print(f"Accuracy en holdout temporal: {accuracy_score(eval_test['result'], y_pred):.3f}")
+    print(classification_report(eval_test["result"], y_pred))
+
+    # Modelo de producción: se reentrena con TODO el histórico pre-Mundial 2026
+    # (el holdout de arriba es solo para medir, no para quedarse con menos datos).
     model = HistGradientBoostingClassifier(max_iter=200, random_state=42)
-    model.fit(X_train, y_train)
-
-    y_pred = model.predict(X_test)
-    print(f"Accuracy en test: {accuracy_score(y_test, y_pred):.3f}")
-    print(classification_report(y_test, y_pred))
-
+    model.fit(train_df[FEATURES], train_df["result"])
     joblib.dump(model, MODEL_PATH)
     print(f"Modelo guardado en {MODEL_PATH}")
 
-    # Partidos del Mundial 2026 sin jugar -> predictions.csv
     if not predict_df.empty:
         probs = model.predict_proba(predict_df[FEATURES])
         classes = model.classes_
@@ -95,10 +114,6 @@ def main():
         write_csv(PREDICTIONS_PATH, out_rows)
         print(f"Predicciones guardadas en {PREDICTIONS_PATH} ({len(out_rows)} partidos)")
 
-    # Partidos del Mundial 2026 ya jugados -> historico_mundial.csv (acierto del modelo)
-    wc2026_played = train_df[
-        (train_df["tournament"] == "FIFA World Cup") & (train_df["date"] >= WORLD_CUP_2026_START)
-    ]
     if not wc2026_played.empty:
         probs = model.predict_proba(wc2026_played[FEATURES])
         predicted = model.predict(wc2026_played[FEATURES])
@@ -124,7 +139,7 @@ def main():
         aciertos = sum(r["correct"] for r in out_rows)
         print(
             f"Histórico Mundial 2026 guardado en {HISTORICO_PATH} "
-            f"({aciertos}/{len(out_rows)} aciertos)"
+            f"({aciertos}/{len(out_rows)} aciertos, fuera de muestra)"
         )
 
 

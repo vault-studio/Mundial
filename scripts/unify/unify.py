@@ -28,6 +28,13 @@ TOURNAMENT_K = {
 }
 DEFAULT_K = 40
 
+TOURNAMENT_WEIGHT = {
+    "FIFA World Cup": 1.5,
+    "FIFA World Cup qualification": 1.0,
+    "Friendly": 0.5,
+}
+DEFAULT_WEIGHT = 1.0
+
 
 def k_factor(tournament):
     return TOURNAMENT_K.get(tournament, DEFAULT_K)
@@ -64,6 +71,9 @@ def main():
 
     elo = {}
     recent_results = {}  # team -> list of points (0/1/3) en orden cronológico
+    recent_goals_for = {}  # team -> list de goles marcados, en orden cronológico
+    recent_goals_against = {}  # team -> list de goles recibidos
+    win_streak = {}  # team -> racha de victorias consecutivas hasta antes de este partido
     rows = []
 
     for m in matches:
@@ -72,6 +82,12 @@ def main():
         elo.setdefault(away, INITIAL_ELO)
         recent_results.setdefault(home, [])
         recent_results.setdefault(away, [])
+        recent_goals_for.setdefault(home, [])
+        recent_goals_for.setdefault(away, [])
+        recent_goals_against.setdefault(home, [])
+        recent_goals_against.setdefault(away, [])
+        win_streak.setdefault(home, 0)
+        win_streak.setdefault(away, 0)
 
         elo_home_pre = elo[home]
         elo_away_pre = elo[away]
@@ -81,6 +97,20 @@ def main():
         form_away = sum(recent_results[away][-FORM_WINDOW:]) / max(
             len(recent_results[away][-FORM_WINDOW:]), 1
         )
+        gf_home = sum(recent_goals_for[home][-FORM_WINDOW:]) / max(
+            len(recent_goals_for[home][-FORM_WINDOW:]), 1
+        )
+        ga_home = sum(recent_goals_against[home][-FORM_WINDOW:]) / max(
+            len(recent_goals_against[home][-FORM_WINDOW:]), 1
+        )
+        gf_away = sum(recent_goals_for[away][-FORM_WINDOW:]) / max(
+            len(recent_goals_for[away][-FORM_WINDOW:]), 1
+        )
+        ga_away = sum(recent_goals_against[away][-FORM_WINDOW:]) / max(
+            len(recent_goals_against[away][-FORM_WINDOW:]), 1
+        )
+        streak_home_pre = win_streak[home]
+        streak_away_pre = win_streak[away]
 
         has_score = m["home_score"] not in ("", "NA") and m["away_score"] not in ("", "NA")
         result = None
@@ -108,12 +138,19 @@ def main():
                 "elo_diff": round(elo_home_pre - elo_away_pre, 1),
                 "form_home": round(form_home, 2),
                 "form_away": round(form_away, 2),
+                "goals_for_home": round(gf_home, 2),
+                "goals_against_home": round(ga_home, 2),
+                "goals_for_away": round(gf_away, 2),
+                "goals_against_away": round(ga_away, 2),
+                "win_streak_home": streak_home_pre,
+                "win_streak_away": streak_away_pre,
                 "squad_value_home": sv_home or "",
                 "squad_value_away": sv_away or "",
                 "squad_value_diff": (sv_home - sv_away) if sv_home and sv_away else "",
                 "home_score": hs if has_score else "",
                 "away_score": as_ if has_score else "",
                 "result": result or "",
+                "sample_weight": TOURNAMENT_WEIGHT.get(m["tournament"], DEFAULT_WEIGHT),
             }
         )
 
@@ -130,6 +167,13 @@ def main():
 
             recent_results[home].append(points_home)
             recent_results[away].append(points_away)
+            recent_goals_for[home].append(hs)
+            recent_goals_against[home].append(as_)
+            recent_goals_for[away].append(as_)
+            recent_goals_against[away].append(hs)
+
+            win_streak[home] = streak_home_pre + 1 if result == "H" else 0
+            win_streak[away] = streak_away_pre + 1 if result == "A" else 0
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT, "w", newline="", encoding="utf-8") as f:
