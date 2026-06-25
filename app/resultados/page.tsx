@@ -57,6 +57,10 @@ function predictedProb(h: Historico) {
   return h[`prob_${h.predicted}` as "prob_H" | "prob_D" | "prob_A"];
 }
 
+function realProb(h: Historico) {
+  return h[`prob_${h.result}` as "prob_H" | "prob_D" | "prob_A"];
+}
+
 function average(nums: number[]) {
   if (nums.length === 0) return null;
   return nums.reduce((a, b) => a + b, 0) / nums.length;
@@ -110,7 +114,12 @@ export default function ResultadosPage() {
 
             <div className="mt-6 grid gap-4">
               {historico.map((h, i) => (
-                <div key={i} className="glass glass-hover rounded-2xl p-5">
+                <div
+                  key={i}
+                  className={`glass glass-hover rounded-2xl p-5 ${
+                    h.correct ? "bg-emerald-400/[0.06]" : "bg-rose-400/[0.06]"
+                  }`}
+                >
                   <div className="flex items-center justify-between gap-3">
                     <span className="font-semibold text-white">
                       {h.home_team} <span className="text-white/40">{h.home_score}-{h.away_score}</span>{" "}
@@ -122,11 +131,11 @@ export default function ResultadosPage() {
                       </span>
                       {h.correct ? (
                         <span className="flex items-center gap-1.5 rounded-full bg-emerald-400/20 px-3 py-1 text-sm font-semibold text-emerald-300">
-                          ✓ {pct(h[`prob_${h.predicted}` as "prob_H" | "prob_D" | "prob_A"])}
+                          ✓ {pct(predictedProb(h))}
                         </span>
                       ) : (
                         <span className="flex items-center gap-1.5 rounded-full bg-rose-400/20 px-3 py-1 text-sm font-semibold text-rose-300">
-                          ✗ {pct(h[`prob_${h.predicted}` as "prob_H" | "prob_D" | "prob_A"])}
+                          ✗ {pct(predictedProb(h))}
                         </span>
                       )}
                     </div>
@@ -134,13 +143,14 @@ export default function ResultadosPage() {
 
                   <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-white/60">
                     <span>
-                      Real: <span className="font-medium text-white">{LABEL[h.result]}</span>
+                      Real: <span className="font-medium text-white">{LABEL[h.result]}</span>{" "}
+                      ({pct(realProb(h))})
                     </span>
                     <span className="text-white/30">·</span>
                     <span>
                       Predicción del modelo:{" "}
                       <span className="font-medium text-white">{LABEL[h.predicted]}</span>{" "}
-                      ({pct(h[`prob_${h.predicted}` as "prob_H" | "prob_D" | "prob_A"])})
+                      ({pct(predictedProb(h))})
                     </span>
                   </div>
                 </div>
