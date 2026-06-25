@@ -117,7 +117,7 @@ export default function ResultadosPage() {
                 <div
                   key={i}
                   className={`glass glass-hover rounded-2xl p-5 ${
-                    h.correct ? "bg-emerald-400/[0.06]" : "bg-rose-400/[0.06]"
+                    h.correct ? "glass-correct" : "glass-incorrect"
                   }`}
                 >
                   <div className="flex items-center justify-between gap-3">
