@@ -53,9 +53,20 @@ function pct(n: number) {
   return `${Math.round(n * 100)}%`;
 }
 
+function predictedProb(h: Historico) {
+  return h[`prob_${h.predicted}` as "prob_H" | "prob_D" | "prob_A"];
+}
+
+function average(nums: number[]) {
+  if (nums.length === 0) return null;
+  return nums.reduce((a, b) => a + b, 0) / nums.length;
+}
+
 export default function ResultadosPage() {
   const historico = loadHistorico().slice().reverse();
   const aciertos = historico.filter((h) => h.correct).length;
+  const avgAciertos = average(historico.filter((h) => h.correct).map(predictedProb));
+  const avgFallos = average(historico.filter((h) => !h.correct).map(predictedProb));
 
   return (
     <div className="px-6 py-10">
@@ -81,6 +92,18 @@ export default function ResultadosPage() {
                 {aciertos}/{historico.length}{" "}
                 <span className="text-base font-medium text-white/50">
                   ({Math.round((aciertos / historico.length) * 100)}%)
+                </span>
+              </span>
+            </div>
+
+            <div className="glass mt-3 flex items-center justify-between rounded-2xl p-5">
+              <span className="text-sm text-white/60">Media de confianza: aciertos y fallos</span>
+              <span className="flex gap-2 text-sm font-semibold">
+                <span className="rounded-full bg-emerald-400/20 px-3 py-1 text-emerald-300">
+                  ✓ {avgAciertos !== null ? pct(avgAciertos) : "–"}
+                </span>
+                <span className="rounded-full bg-rose-400/20 px-3 py-1 text-rose-300">
+                  ✗ {avgFallos !== null ? pct(avgFallos) : "–"}
                 </span>
               </span>
             </div>
