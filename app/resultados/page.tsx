@@ -98,12 +98,12 @@ export default function ResultadosPage() {
                         {h.date}
                       </span>
                       {h.correct ? (
-                        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-400/20 text-emerald-300">
-                          ✓
+                        <span className="flex items-center gap-1.5 rounded-full bg-emerald-400/20 px-3 py-1 text-sm font-semibold text-emerald-300">
+                          ✓ {pct(h[`prob_${h.predicted}` as "prob_H" | "prob_D" | "prob_A"])}
                         </span>
                       ) : (
-                        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-rose-400/20 text-rose-300">
-                          ✗
+                        <span className="flex items-center gap-1.5 rounded-full bg-rose-400/20 px-3 py-1 text-sm font-semibold text-rose-300">
+                          ✗ {pct(h[`prob_${h.predicted}` as "prob_H" | "prob_D" | "prob_A"])}
                         </span>
                       )}
                     </div>
