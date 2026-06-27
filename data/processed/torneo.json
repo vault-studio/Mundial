@@ -1494,148 +1494,148 @@
       "round": "Dieciseisavos (Ronda de 32)",
       "matches": [
         {
-          "team1": "Argentina",
-          "team2": "Belgium",
-          "group1": "Grupo J",
-          "group2": "Grupo G",
-          "prob1": 0.8025,
-          "prob2": 0.1975,
-          "winner": "Argentina"
-        },
-        {
-          "team1": "Spain",
-          "team2": "Australia",
-          "group1": "Grupo H",
-          "group2": "Grupo D",
-          "prob1": 0.7863,
-          "prob2": 0.2137,
-          "winner": "Spain"
-        },
-        {
-          "team1": "France",
-          "team2": "United States",
-          "group1": "Grupo I",
-          "group2": "Grupo D",
-          "prob1": 0.7735,
-          "prob2": 0.2265,
-          "winner": "France"
-        },
-        {
-          "team1": "England",
-          "team2": "Austria",
-          "group1": "Grupo L",
-          "group2": "Grupo J",
-          "prob1": 0.717,
-          "prob2": 0.283,
-          "winner": "England"
-        },
-        {
-          "team1": "Colombia",
-          "team2": "Paraguay",
-          "group1": "Grupo K",
-          "group2": "Grupo D",
-          "prob1": 0.6869,
-          "prob2": 0.3131,
-          "winner": "Colombia"
-        },
-        {
-          "team1": "Brazil",
-          "team2": "South Korea",
-          "group1": "Grupo C",
-          "group2": "Grupo A",
-          "prob1": 0.8073,
-          "prob2": 0.1927,
-          "winner": "Brazil"
-        },
-        {
-          "team1": "Portugal",
-          "team2": "Iran",
-          "group1": "Grupo K",
-          "group2": "Grupo G",
-          "prob1": 0.7473,
-          "prob2": 0.2527,
-          "winner": "Portugal"
+          "team1": "South Africa",
+          "team2": "Canada",
+          "group1": "Grupo A",
+          "group2": "Grupo B",
+          "prob1": 0.2822,
+          "prob2": 0.7178,
+          "winner": "Canada"
         },
         {
           "team1": "Netherlands",
-          "team2": "Canada",
+          "team2": "Morocco",
           "group1": "Grupo F",
-          "group2": "Grupo B",
-          "prob1": 0.6392,
-          "prob2": 0.3608,
+          "group2": "Grupo C",
+          "prob1": 0.511,
+          "prob2": 0.489,
           "winner": "Netherlands"
         },
         {
-          "team1": "Germany",
-          "team2": "Egypt",
-          "group1": "Grupo E",
-          "group2": "Grupo G",
-          "prob1": 0.8169,
-          "prob2": 0.1831,
-          "winner": "Germany"
-        },
-        {
-          "team1": "Japan",
-          "team2": "Ivory Coast",
-          "group1": "Grupo F",
-          "group2": "Grupo E",
-          "prob1": 0.5818,
-          "prob2": 0.4182,
-          "winner": "Japan"
-        },
-        {
-          "team1": "Morocco",
-          "team2": "Sweden",
+          "team1": "Brazil",
+          "team2": "Japan",
           "group1": "Grupo C",
           "group2": "Grupo F",
-          "prob1": 0.7773,
-          "prob2": 0.2227,
-          "winner": "Morocco"
+          "prob1": 0.6714,
+          "prob2": 0.3286,
+          "winner": "Brazil"
         },
         {
-          "team1": "Norway",
-          "team2": "DR Congo",
-          "group1": "Grupo I",
-          "group2": "Grupo K",
-          "prob1": 0.7903,
-          "prob2": 0.2097,
+          "team1": "Ivory Coast",
+          "team2": "Norway",
+          "group1": "Grupo E",
+          "group2": "Grupo I",
+          "prob1": 0.3645,
+          "prob2": 0.6355,
           "winner": "Norway"
         },
         {
-          "team1": "Mexico",
+          "team1": "Colombia",
+          "team2": "Croatia",
+          "group1": "Grupo K",
+          "group2": "Grupo L",
+          "prob1": 0.5226,
+          "prob2": 0.4774,
+          "winner": "Colombia"
+        },
+        {
+          "team1": "Spain",
+          "team2": "Austria",
+          "group1": "Grupo H",
+          "group2": "Grupo J",
+          "prob1": 0.7731,
+          "prob2": 0.2269,
+          "winner": "Spain"
+        },
+        {
+          "team1": "Australia",
+          "team2": "Belgium",
+          "group1": "Grupo D",
+          "group2": "Grupo G",
+          "prob1": 0.4072,
+          "prob2": 0.5928,
+          "winner": "Belgium"
+        },
+        {
+          "team1": "Argentina",
           "team2": "Saudi Arabia",
-          "group1": "Grupo A",
+          "group1": "Grupo J",
           "group2": "Grupo H",
-          "prob1": 0.7951,
-          "prob2": 0.2049,
+          "prob1": 0.916,
+          "prob2": 0.084,
+          "winner": "Argentina"
+        },
+        {
+          "team1": "Germany",
+          "team2": "South Korea",
+          "group1": "Grupo E",
+          "group2": "Grupo A",
+          "prob1": 0.8018,
+          "prob2": 0.1982,
+          "winner": "Germany"
+        },
+        {
+          "team1": "France",
+          "team2": "Paraguay",
+          "group1": "Grupo I",
+          "group2": "Grupo D",
+          "prob1": 0.8248,
+          "prob2": 0.1752,
+          "winner": "France"
+        },
+        {
+          "team1": "Mexico",
+          "team2": "Sweden",
+          "group1": "Grupo A",
+          "group2": "Grupo F",
+          "prob1": 0.6666,
+          "prob2": 0.3334,
           "winner": "Mexico"
         },
         {
-          "team1": "Croatia",
-          "team2": "South Africa",
+          "team1": "England",
+          "team2": "DR Congo",
           "group1": "Grupo L",
-          "group2": "Grupo A",
-          "prob1": 0.785,
-          "prob2": 0.215,
-          "winner": "Croatia"
+          "group2": "Grupo K",
+          "prob1": 0.8524,
+          "prob2": 0.1476,
+          "winner": "England"
         },
         {
-          "team1": "Ecuador",
-          "team2": "Ghana",
-          "group1": "Grupo E",
-          "group2": "Grupo L",
-          "prob1": 0.7913,
-          "prob2": 0.2087,
+          "team1": "United States",
+          "team2": "Bosnia and Herzegovina",
+          "group1": "Grupo D",
+          "group2": "Grupo B",
+          "prob1": 0.7839,
+          "prob2": 0.2161,
+          "winner": "United States"
+        },
+        {
+          "team1": "Iran",
+          "team2": "Ecuador",
+          "group1": "Grupo G",
+          "group2": "Grupo E",
+          "prob1": 0.3764,
+          "prob2": 0.6236,
           "winner": "Ecuador"
         },
         {
           "team1": "Switzerland",
-          "team2": "Bosnia and Herzegovina",
+          "team2": "Egypt",
           "group1": "Grupo B",
-          "group2": "Grupo B",
-          "prob1": 0.8069,
-          "prob2": 0.1931,
+          "group2": "Grupo G",
+          "prob1": 0.6116,
+          "prob2": 0.3884,
           "winner": "Switzerland"
+        },
+        {
+          "team1": "Portugal",
+          "team2": "Ghana",
+          "group1": "Grupo K",
+          "group2": "Grupo L",
+          "prob1": 0.814,
+          "prob2": 0.186,
+          "winner": "Portugal"
         }
       ]
     },
@@ -1643,12 +1643,98 @@
       "round": "Octavos de final",
       "matches": [
         {
-          "team1": "Argentina",
+          "team1": "Canada",
+          "team2": "Netherlands",
+          "group1": "Grupo B",
+          "group2": "Grupo F",
+          "prob1": 0.3291,
+          "prob2": 0.6709,
+          "winner": "Netherlands"
+        },
+        {
+          "team1": "Brazil",
+          "team2": "Norway",
+          "group1": "Grupo C",
+          "group2": "Grupo I",
+          "prob1": 0.6228,
+          "prob2": 0.3772,
+          "winner": "Brazil"
+        },
+        {
+          "team1": "Colombia",
           "team2": "Spain",
-          "group1": "Grupo J",
+          "group1": "Grupo K",
           "group2": "Grupo H",
-          "prob1": 0.553,
-          "prob2": 0.447,
+          "prob1": 0.3527,
+          "prob2": 0.6473,
+          "winner": "Spain"
+        },
+        {
+          "team1": "Belgium",
+          "team2": "Argentina",
+          "group1": "Grupo G",
+          "group2": "Grupo J",
+          "prob1": 0.3081,
+          "prob2": 0.6919,
+          "winner": "Argentina"
+        },
+        {
+          "team1": "Germany",
+          "team2": "France",
+          "group1": "Grupo E",
+          "group2": "Grupo I",
+          "prob1": 0.4917,
+          "prob2": 0.5083,
+          "winner": "France"
+        },
+        {
+          "team1": "Mexico",
+          "team2": "England",
+          "group1": "Grupo A",
+          "group2": "Grupo L",
+          "prob1": 0.3491,
+          "prob2": 0.6509,
+          "winner": "England"
+        },
+        {
+          "team1": "United States",
+          "team2": "Ecuador",
+          "group1": "Grupo D",
+          "group2": "Grupo E",
+          "prob1": 0.4536,
+          "prob2": 0.5464,
+          "winner": "Ecuador"
+        },
+        {
+          "team1": "Switzerland",
+          "team2": "Portugal",
+          "group1": "Grupo B",
+          "group2": "Grupo K",
+          "prob1": 0.4477,
+          "prob2": 0.5523,
+          "winner": "Portugal"
+        }
+      ]
+    },
+    {
+      "round": "Cuartos de final",
+      "matches": [
+        {
+          "team1": "Netherlands",
+          "team2": "Brazil",
+          "group1": "Grupo F",
+          "group2": "Grupo C",
+          "prob1": 0.4078,
+          "prob2": 0.5922,
+          "winner": "Brazil"
+        },
+        {
+          "team1": "Spain",
+          "team2": "Argentina",
+          "group1": "Grupo H",
+          "group2": "Grupo J",
+          "prob1": 0.4734,
+          "prob2": 0.5266,
           "winner": "Argentina"
         },
         {
@@ -1661,63 +1747,41 @@
           "winner": "France"
         },
         {
-          "team1": "Colombia",
-          "team2": "Brazil",
-          "group1": "Grupo K",
-          "group2": "Grupo C",
-          "prob1": 0.4256,
-          "prob2": 0.5744,
-          "winner": "Brazil"
-        },
-        {
-          "team1": "Portugal",
-          "team2": "Netherlands",
-          "group1": "Grupo K",
-          "group2": "Grupo F",
-          "prob1": 0.5133,
-          "prob2": 0.4867,
-          "winner": "Portugal"
-        },
-        {
-          "team1": "Germany",
-          "team2": "Japan",
-          "group1": "Grupo E",
-          "group2": "Grupo F",
-          "prob1": 0.6482,
-          "prob2": 0.3518,
-          "winner": "Germany"
-        },
-        {
-          "team1": "Morocco",
-          "team2": "Norway",
-          "group1": "Grupo C",
-          "group2": "Grupo I",
-          "prob1": 0.4716,
-          "prob2": 0.5284,
-          "winner": "Norway"
-        },
-        {
-          "team1": "Mexico",
-          "team2": "Croatia",
-          "group1": "Grupo A",
-          "group2": "Grupo L",
-          "prob1": 0.4386,
-          "prob2": 0.5614,
-          "winner": "Croatia"
-        },
-        {
           "team1": "Ecuador",
-          "team2": "Switzerland",
+          "team2": "Portugal",
           "group1": "Grupo E",
-          "group2": "Grupo B",
-          "prob1": 0.4866,
-          "prob2": 0.5134,
-          "winner": "Switzerland"
+          "group2": "Grupo K",
+          "prob1": 0.4393,
+          "prob2": 0.5607,
+          "winner": "Portugal"
         }
       ]
     },
     {
-      "round": "Cuartos de final",
+      "round": "Semifinales",
+      "matches": [
+        {
+          "team1": "Brazil",
+          "team2": "Argentina",
+          "group1": "Grupo C",
+          "group2": "Grupo J",
+          "prob1": 0.4872,
+          "prob2": 0.5128,
+          "winner": "Argentina"
+        },
+        {
+          "team1": "France",
+          "team2": "Portugal",
+          "group1": "Grupo I",
+          "group2": "Grupo K",
+          "prob1": 0.6856,
+          "prob2": 0.3144,
+          "winner": "France"
+        }
+      ]
+    },
+    {
+      "round": "Final",
       "matches": [
         {
           "team1": "Argentina",
@@ -1727,74 +1791,10 @@
           "prob1": 0.5572,
           "prob2": 0.4428,
           "winner": "Argentina"
-        },
-        {
-          "team1": "Brazil",
-          "team2": "Portugal",
-          "group1": "Grupo C",
-          "group2": "Grupo K",
-          "prob1": 0.5185,
-          "prob2": 0.4815,
-          "winner": "Brazil"
-        },
-        {
-          "team1": "Germany",
-          "team2": "Norway",
-          "group1": "Grupo E",
-          "group2": "Grupo I",
-          "prob1": 0.6181,
-          "prob2": 0.3819,
-          "winner": "Germany"
-        },
-        {
-          "team1": "Croatia",
-          "team2": "Switzerland",
-          "group1": "Grupo L",
-          "group2": "Grupo B",
-          "prob1": 0.4884,
-          "prob2": 0.5116,
-          "winner": "Switzerland"
-        }
-      ]
-    },
-    {
-      "round": "Semifinales",
-      "matches": [
-        {
-          "team1": "Argentina",
-          "team2": "Brazil",
-          "group1": "Grupo J",
-          "group2": "Grupo C",
-          "prob1": 0.6012,
-          "prob2": 0.3988,
-          "winner": "Argentina"
-        },
-        {
-          "team1": "Germany",
-          "team2": "Switzerland",
-          "group1": "Grupo E",
-          "group2": "Grupo B",
-          "prob1": 0.7483,
-          "prob2": 0.2517,
-          "winner": "Germany"
-        }
-      ]
-    },
-    {
-      "round": "Final",
-      "matches": [
-        {
-          "team1": "Argentina",
-          "team2": "Germany",
-          "group1": "Grupo J",
-          "group2": "Grupo E",
-          "prob1": 0.7347,
-          "prob2": 0.2653,
-          "winner": "Argentina"
         }
       ]
     }
   ],
   "champion": "Argentina",
-  "disclaimer": "El cruce de eliminatorias usa un seeding propio (mejor clasificado vs peor clasificado), no el cruce oficial exacto de la FIFA, porque los datos de origen no incluyen las letras de grupo oficiales del sorteo."
+  "disclaimer": "El Round of 32 usa la estructura oficial de la FIFA (8 cruces fijos + 8 cruces de ganador de grupo contra tercero, con su lista real de grupos candidatos). La única parte no oficial es qué tercero EXACTO le toca a cada uno de esos 8 cruces: depende de una tabla de 495 combinaciones (Anexo C del reglamento FIFA) que no se reproduce aquí, así que se asigna el mejor tercero disponible entre los candidatos de cada cruce."
 }

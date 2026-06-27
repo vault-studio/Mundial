@@ -11,11 +11,15 @@ data/processed/torneo.json para que la web lo muestre por pestañas.
   puntos, con el promedio de probabilidad de victoria del modelo como
   criterio de desempate, ya que no tenemos diferencia de goles para los
   partidos todavía no jugados).
-- Eliminatorias: IMPORTANTE - el cruce real de la FIFA depende de las
-  letras de grupo oficiales que no tenemos, así que el cuadro se genera con
-  un seeding propio (mejor clasificado contra peor clasificado, evitando
-  repetir rival de grupo) en vez del cruce oficial exacto. Se marca como tal
-  en la web.
+- Eliminatorias: los 8 cruces entre primero/segundo de grupo que NO dependen
+  de qué terceros clasifiquen son los oficiales de la FIFA (FIXED_PAIRS). Los
+  otros 8 cruces sí dependen de terceros, así que la lista de candidatos por
+  cruce (THIRD_PLACE_SLOTS) también es la oficial - pero la asignación exacta
+  de CUÁL tercero concreto le toca a cada slot depende de una tabla de 495
+  combinaciones publicada en el Anexo C del reglamento FIFA que no se
+  reproduce aquí; se asigna el mejor tercero disponible entre los candidatos
+  de cada slot, lo cual puede no coincidir con el sorteo oficial exacto en
+  los casos ambiguos. Se marca en la web.
 - Cada partido (jugado o no) lleva la probabilidad del modelo. Para
   eliminatorias, que no admiten empate, la probabilidad de empate se
   reparte 50/50 entre ambos equipos para decidir quién avanza.
@@ -81,6 +85,36 @@ GROUP_LETTERS = {
 
 def group_letter(teams):
     return GROUP_LETTERS.get(frozenset(teams), "?")
+
+
+# Round of 32 oficial (fuente: reglamento FIFA / Wikipedia "2026 FIFA World Cup
+# knockout stage"). Los 8 cruces fijos no dependen de qué terceros clasifiquen.
+FIXED_PAIRS = [
+    ("2A", "2B"),
+    ("1F", "2C"),
+    ("1C", "2F"),
+    ("2E", "2I"),
+    ("2K", "2L"),
+    ("1H", "2J"),
+    ("2D", "2G"),
+    ("1J", "2H"),
+]
+
+# Los otros 8 cruces enfrentan a un ganador de grupo contra uno de los 8
+# mejores terceros, dentro de esta lista de grupos candidatos (también oficial).
+# Qué tercero EXACTO le toca a cada slot depende del Anexo C (495 combinaciones)
+# que no se reproduce aquí: se asigna el mejor tercero disponible entre los
+# candidatos del slot, procesando los slots en este mismo orden.
+THIRD_PLACE_SLOTS = [
+    ("1E", ["A", "B", "C", "D", "F"]),
+    ("1I", ["C", "D", "F", "G", "H"]),
+    ("1A", ["C", "E", "F", "H", "I"]),
+    ("1L", ["E", "H", "I", "J", "K"]),
+    ("1D", ["B", "E", "F", "I", "J"]),
+    ("1G", ["A", "E", "H", "I", "J"]),
+    ("1B", ["E", "F", "G", "I", "J"]),
+    ("1K", ["D", "E", "I", "J", "L"]),
+]
 
 
 def load_group_matches():
@@ -239,21 +273,53 @@ def compute_standings(group_teams, match_views):
     return ranked
 
 
-def seed_bracket(qualifiers):
-    """Seeding propio (no el oficial de FIFA): ordena los 32 clasificados por
-    fuerza (Elo) y empareja 1ºvs32º, 2ºvs31º, ... Si el cruce directo
-    enfrentaría a dos equipos del mismo grupo, se intercambia con el rival
-    del emparejamiento siguiente para evitarlo."""
-    ranked = sorted(qualifiers, key=lambda q: -q["elo"])
-    n = len(ranked)
-    weak_half = ranked[n // 2 :]  # mitad más débil, en el mismo orden de fuerza
+def official_bracket(groups_out, best_thirds):
+    """Resuelve el Round of 32 oficial: los 8 cruces fijos tal cual, y los 8
+    cruces con tercero asignando el mejor tercero disponible entre los
+    candidatos de cada slot (ver THIRD_PLACE_SLOTS)."""
+    by_letter = {g["label"].split()[-1]: g["standings"] for g in groups_out}
 
-    for i in range(len(weak_half) - 1):
-        strong = ranked[i]
-        if strong["group"] == weak_half[i]["group"]:
-            weak_half[i], weak_half[i + 1] = weak_half[i + 1], weak_half[i]
+    def slot_team(code):
+        # "1A" -> ganador de A, "2A" -> segundo de A
+        pos, letter = int(code[0]), code[1]
+        return by_letter[letter][pos - 1]["team"]
 
-    return list(zip(ranked[: n // 2], weak_half))
+    pairs = []
+    for a_code, b_code in FIXED_PAIRS:
+        pairs.append((slot_team(a_code), slot_team(b_code)))
+
+    third_letters = {t["group"].split()[-1] for t in best_thirds}
+    assignment = match_thirds_to_slots(third_letters)
+
+    third_team_by_letter = {t["group"].split()[-1]: t["team"] for t in best_thirds}
+    for winner_code, letter in assignment:
+        pairs.append((slot_team(winner_code), third_team_by_letter[letter]))
+
+    return pairs
+
+
+def match_thirds_to_slots(qualified_letters):
+    """Empareja cada uno de los 8 slots de THIRD_PLACE_SLOTS con un tercero
+    clasificado distinto, respetando su lista de grupos candidatos. Es un
+    emparejamiento bipartito exacto (con backtracking) en vez de voraz, porque
+    asignar de forma voraz puede dejar un slot sin candidato válido aunque
+    exista una asignación global correcta."""
+
+    def backtrack(i, used):
+        if i == len(THIRD_PLACE_SLOTS):
+            return []
+        winner_code, candidates = THIRD_PLACE_SLOTS[i]
+        for letter in candidates:
+            if letter in qualified_letters and letter not in used:
+                rest = backtrack(i + 1, used | {letter})
+                if rest is not None:
+                    return [(winner_code, letter)] + rest
+        return None
+
+    result = backtrack(0, set())
+    if result is None:
+        raise ValueError("No se encontró una asignación válida de terceros a los slots")
+    return result
 
 
 def main():
@@ -285,24 +351,25 @@ def main():
     thirds_sorted = sorted(thirds, key=lambda r: (-r["pts"], -r["gd"], -r["gf"], -r["prob_sum"]))
     best_thirds = thirds_sorted[:8]
     all_qualifiers.extend(best_thirds)
+    team_group = {q["team"]: q["group"] for q in all_qualifiers}
 
     bracket = []
-    pairs = seed_bracket(all_qualifiers)
+    pairs = official_bracket(groups_out, best_thirds)
     round_matches = []
-    for a, b in pairs:
-        probs = predict_match(model, snap, a["team"], b["team"], neutral=1)
+    for team1, team2 in pairs:
+        probs = predict_match(model, snap, team1, team2, neutral=1)
         p_a = float(probs["H"]) + float(probs["D"]) / 2
         p_b = float(probs["A"]) + float(probs["D"]) / 2
-        winner = a if p_a >= p_b else b
+        winner = team1 if p_a >= p_b else team2
         round_matches.append(
             {
-                "team1": a["team"],
-                "team2": b["team"],
-                "group1": a["group"],
-                "group2": b["group"],
+                "team1": team1,
+                "team2": team2,
+                "group1": team_group.get(team1, ""),
+                "group2": team_group.get(team2, ""),
                 "prob1": round(p_a, 4),
                 "prob2": round(p_b, 4),
-                "winner": winner["team"],
+                "winner": winner,
             }
         )
     bracket.append({"round": ROUND_NAMES[0], "matches": round_matches})
@@ -348,9 +415,12 @@ def main():
         "bracket": bracket,
         "champion": champion,
         "disclaimer": (
-            "El cruce de eliminatorias usa un seeding propio (mejor clasificado vs "
-            "peor clasificado), no el cruce oficial exacto de la FIFA, porque los "
-            "datos de origen no incluyen las letras de grupo oficiales del sorteo."
+            "El Round of 32 usa la estructura oficial de la FIFA (8 cruces fijos + "
+            "8 cruces de ganador de grupo contra tercero, con su lista real de grupos "
+            "candidatos). La única parte no oficial es qué tercero EXACTO le toca a "
+            "cada uno de esos 8 cruces: depende de una tabla de 495 combinaciones "
+            "(Anexo C del reglamento FIFA) que no se reproduce aquí, así que se asigna "
+            "el mejor tercero disponible entre los candidatos de cada cruce."
         ),
     }
 
