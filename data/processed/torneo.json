@@ -9,25 +9,38 @@
           "pg": 3,
           "pe": 0,
           "pp": 0,
-          "gf": 4,
+          "gf": 6,
           "gc": 0,
           "pts": 9,
           "prob_sum": 1.8117,
-          "gd": 4,
+          "gd": 6,
           "pos": 1
+        },
+        {
+          "team": "South Africa",
+          "pj": 3,
+          "pg": 1,
+          "pe": 1,
+          "pp": 1,
+          "gf": 2,
+          "gc": 3,
+          "pts": 4,
+          "prob_sum": 0.4396,
+          "gd": -1,
+          "pos": 2
         },
         {
           "team": "South Korea",
           "pj": 3,
-          "pg": 2,
+          "pg": 1,
           "pe": 0,
-          "pp": 1,
-          "gf": 3,
-          "gc": 2,
-          "pts": 6,
+          "pp": 2,
+          "gf": 2,
+          "gc": 3,
+          "pts": 3,
           "prob_sum": 1.2185000000000001,
-          "gd": 1,
-          "pos": 2
+          "gd": -1,
+          "pos": 3
         },
         {
           "team": "Czech Republic",
@@ -36,23 +49,10 @@
           "pe": 1,
           "pp": 2,
           "gf": 2,
-          "gc": 4,
+          "gc": 6,
           "pts": 1,
           "prob_sum": 0.8021,
-          "gd": -2,
-          "pos": 3
-        },
-        {
-          "team": "South Africa",
-          "pj": 3,
-          "pg": 0,
-          "pe": 1,
-          "pp": 2,
-          "gf": 1,
-          "gc": 4,
-          "pts": 1,
-          "prob_sum": 0.4396,
-          "gd": -3,
+          "gd": -4,
           "pos": 4
         }
       ],
@@ -105,21 +105,23 @@
           "date": "2026-06-24",
           "home_team": "Mexico",
           "away_team": "Czech Republic",
-          "played": false,
+          "played": true,
           "prob_H": 0.639,
           "prob_D": 0.2545,
           "prob_A": 0.1065,
-          "predicted": "H"
+          "home_score": 3,
+          "away_score": 0
         },
         {
           "date": "2026-06-24",
           "home_team": "South Africa",
           "away_team": "South Korea",
-          "played": false,
+          "played": true,
           "prob_H": 0.1595,
           "prob_D": 0.297,
           "prob_A": 0.5436,
-          "predicted": "A"
+          "home_score": 1,
+          "away_score": 0
         }
       ]
     },
@@ -132,8 +134,8 @@
           "pg": 2,
           "pe": 1,
           "pp": 0,
-          "gf": 6,
-          "gc": 2,
+          "gf": 7,
+          "gc": 3,
           "pts": 7,
           "prob_sum": 1.917,
           "gd": 4,
@@ -145,8 +147,8 @@
           "pg": 1,
           "pe": 1,
           "pp": 1,
-          "gf": 7,
-          "gc": 2,
+          "gf": 8,
+          "gc": 3,
           "pts": 4,
           "prob_sum": 1.6801,
           "gd": 5,
@@ -158,11 +160,11 @@
           "pg": 1,
           "pe": 1,
           "pp": 1,
-          "gf": 3,
-          "gc": 5,
+          "gf": 5,
+          "gc": 6,
           "pts": 4,
           "prob_sum": 0.6984,
-          "gd": -2,
+          "gd": -1,
           "pos": 3
         },
         {
@@ -171,11 +173,11 @@
           "pg": 0,
           "pe": 1,
           "pp": 2,
-          "gf": 1,
-          "gc": 8,
+          "gf": 2,
+          "gc": 10,
           "pts": 1,
           "prob_sum": 0.3409,
-          "gd": -7,
+          "gd": -8,
           "pos": 4
         }
       ],
@@ -228,21 +230,23 @@
           "date": "2026-06-24",
           "home_team": "Canada",
           "away_team": "Switzerland",
-          "played": false,
+          "played": true,
           "prob_H": 0.2555,
           "prob_D": 0.3033,
           "prob_A": 0.4411,
-          "predicted": "A"
+          "home_score": 1,
+          "away_score": 2
         },
         {
           "date": "2026-06-24",
           "home_team": "Bosnia and Herzegovina",
           "away_team": "Qatar",
-          "played": false,
+          "played": true,
           "prob_H": 0.4863,
           "prob_D": 0.2894,
           "prob_A": 0.2243,
-          "predicted": "H"
+          "home_score": 3,
+          "away_score": 1
         }
       ]
     },
@@ -255,11 +259,11 @@
           "pg": 2,
           "pe": 1,
           "pp": 0,
-          "gf": 5,
+          "gf": 7,
           "gc": 1,
           "pts": 7,
           "prob_sum": 1.8807,
-          "gd": 4,
+          "gd": 6,
           "pos": 1
         },
         {
@@ -268,11 +272,11 @@
           "pg": 2,
           "pe": 1,
           "pp": 0,
-          "gf": 3,
-          "gc": 1,
+          "gf": 6,
+          "gc": 3,
           "pts": 7,
           "prob_sum": 1.4262000000000001,
-          "gd": 2,
+          "gd": 3,
           "pos": 2
         },
         {
@@ -282,10 +286,10 @@
           "pe": 0,
           "pp": 2,
           "gf": 1,
-          "gc": 2,
+          "gc": 4,
           "pts": 3,
           "prob_sum": 0.9366,
-          "gd": -1,
+          "gd": -3,
           "pos": 3
         },
         {
@@ -294,11 +298,11 @@
           "pg": 0,
           "pe": 0,
           "pp": 3,
-          "gf": 0,
-          "gc": 5,
+          "gf": 2,
+          "gc": 8,
           "pts": 0,
           "prob_sum": 0.3175,
-          "gd": -5,
+          "gd": -6,
           "pos": 4
         }
       ],
@@ -351,21 +355,23 @@
           "date": "2026-06-24",
           "home_team": "Scotland",
           "away_team": "Brazil",
-          "played": false,
+          "played": true,
           "prob_H": 0.164,
           "prob_D": 0.192,
           "prob_A": 0.6439,
-          "predicted": "A"
+          "home_score": 0,
+          "away_score": 3
         },
         {
           "date": "2026-06-24",
           "home_team": "Morocco",
           "away_team": "Haiti",
-          "played": false,
+          "played": true,
           "prob_H": 0.7225,
           "prob_D": 0.1935,
           "prob_A": 0.084,
-          "predicted": "H"
+          "home_score": 4,
+          "away_score": 2
         }
       ]
     },
@@ -375,53 +381,53 @@
         {
           "team": "United States",
           "pj": 3,
-          "pg": 3,
+          "pg": 2,
           "pe": 0,
-          "pp": 0,
-          "gf": 7,
-          "gc": 1,
-          "pts": 9,
+          "pp": 1,
+          "gf": 8,
+          "gc": 4,
+          "pts": 6,
           "prob_sum": 1.1341999999999999,
-          "gd": 6,
+          "gd": 4,
           "pos": 1
         },
         {
           "team": "Australia",
           "pj": 3,
-          "pg": 2,
-          "pe": 0,
+          "pg": 1,
+          "pe": 1,
           "pp": 1,
-          "gf": 3,
+          "gf": 2,
           "gc": 2,
-          "pts": 6,
+          "pts": 4,
           "prob_sum": 0.9601,
-          "gd": 1,
+          "gd": 0,
           "pos": 2
         },
         {
           "team": "Paraguay",
           "pj": 3,
           "pg": 1,
-          "pe": 0,
-          "pp": 2,
+          "pe": 1,
+          "pp": 1,
           "gf": 2,
-          "gc": 5,
-          "pts": 3,
+          "gc": 4,
+          "pts": 4,
           "prob_sum": 0.9227000000000001,
-          "gd": -3,
+          "gd": -2,
           "pos": 3
         },
         {
           "team": "Turkey",
           "pj": 3,
-          "pg": 0,
+          "pg": 1,
           "pe": 0,
-          "pp": 3,
-          "gf": 0,
-          "gc": 4,
-          "pts": 0,
+          "pp": 2,
+          "gf": 3,
+          "gc": 5,
+          "pts": 3,
           "prob_sum": 1.2259,
-          "gd": -4,
+          "gd": -2,
           "pos": 4
         }
       ],
@@ -474,21 +480,23 @@
           "date": "2026-06-25",
           "home_team": "United States",
           "away_team": "Turkey",
-          "played": false,
+          "played": true,
           "prob_H": 0.371,
           "prob_D": 0.2698,
           "prob_A": 0.3592,
-          "predicted": "H"
+          "home_score": 2,
+          "away_score": 3
         },
         {
           "date": "2026-06-25",
           "home_team": "Paraguay",
           "away_team": "Australia",
-          "played": false,
+          "played": true,
           "prob_H": 0.3222,
           "prob_D": 0.2902,
           "prob_A": 0.3876,
-          "predicted": "A"
+          "home_score": 0,
+          "away_score": 0
         }
       ]
     },
@@ -498,14 +506,14 @@
         {
           "team": "Germany",
           "pj": 3,
-          "pg": 3,
+          "pg": 2,
           "pe": 0,
-          "pp": 0,
+          "pp": 1,
           "gf": 10,
-          "gc": 2,
-          "pts": 9,
+          "gc": 4,
+          "pts": 6,
           "prob_sum": 1.9947000000000001,
-          "gd": 8,
+          "gd": 6,
           "pos": 1
         },
         {
@@ -514,24 +522,24 @@
           "pg": 2,
           "pe": 0,
           "pp": 1,
-          "gf": 3,
+          "gf": 4,
           "gc": 2,
           "pts": 6,
           "prob_sum": 1.0973,
-          "gd": 1,
+          "gd": 2,
           "pos": 2
         },
         {
           "team": "Ecuador",
           "pj": 3,
-          "pg": 0,
+          "pg": 1,
           "pe": 1,
-          "pp": 2,
-          "gf": 0,
+          "pp": 1,
+          "gf": 2,
           "gc": 2,
-          "pts": 1,
+          "pts": 4,
           "prob_sum": 1.3711000000000002,
-          "gd": -2,
+          "gd": 0,
           "pos": 3
         },
         {
@@ -541,10 +549,10 @@
           "pe": 1,
           "pp": 2,
           "gf": 1,
-          "gc": 8,
+          "gc": 9,
           "pts": 1,
           "prob_sum": 0.2361,
-          "gd": -7,
+          "gd": -8,
           "pos": 4
         }
       ],
@@ -597,21 +605,23 @@
           "date": "2026-06-25",
           "home_team": "Curaçao",
           "away_team": "Ivory Coast",
-          "played": false,
+          "played": true,
           "prob_H": 0.1403,
           "prob_D": 0.1635,
           "prob_A": 0.6962,
-          "predicted": "A"
+          "home_score": 0,
+          "away_score": 2
         },
         {
           "date": "2026-06-25",
           "home_team": "Ecuador",
           "away_team": "Germany",
-          "played": false,
+          "played": true,
           "prob_H": 0.249,
           "prob_D": 0.3135,
           "prob_A": 0.4376,
-          "predicted": "A"
+          "home_score": 2,
+          "away_score": 1
         }
       ]
     },
@@ -624,37 +634,37 @@
           "pg": 2,
           "pe": 1,
           "pp": 0,
-          "gf": 8,
-          "gc": 3,
+          "gf": 10,
+          "gc": 4,
           "pts": 7,
           "prob_sum": 1.7389000000000001,
-          "gd": 5,
+          "gd": 6,
           "pos": 1
         },
         {
           "team": "Japan",
           "pj": 3,
-          "pg": 2,
-          "pe": 1,
+          "pg": 1,
+          "pe": 2,
           "pp": 0,
           "gf": 7,
-          "gc": 2,
-          "pts": 7,
+          "gc": 3,
+          "pts": 5,
           "prob_sum": 1.6766,
-          "gd": 5,
+          "gd": 4,
           "pos": 2
         },
         {
           "team": "Sweden",
           "pj": 3,
           "pg": 1,
-          "pe": 0,
-          "pp": 2,
-          "gf": 6,
+          "pe": 1,
+          "pp": 1,
+          "gf": 7,
           "gc": 7,
-          "pts": 3,
+          "pts": 4,
           "prob_sum": 1.0196,
-          "gd": -1,
+          "gd": 0,
           "pos": 3
         },
         {
@@ -663,11 +673,11 @@
           "pg": 0,
           "pe": 0,
           "pp": 3,
-          "gf": 1,
-          "gc": 10,
+          "gf": 2,
+          "gc": 12,
           "pts": 0,
           "prob_sum": 0.3245,
-          "gd": -9,
+          "gd": -10,
           "pos": 4
         }
       ],
@@ -720,21 +730,23 @@
           "date": "2026-06-25",
           "home_team": "Japan",
           "away_team": "Sweden",
-          "played": false,
+          "played": true,
           "prob_H": 0.641,
           "prob_D": 0.1958,
           "prob_A": 0.1632,
-          "predicted": "H"
+          "home_score": 1,
+          "away_score": 1
         },
         {
           "date": "2026-06-25",
           "home_team": "Tunisia",
           "away_team": "Netherlands",
-          "played": false,
+          "played": true,
           "prob_H": 0.0854,
           "prob_D": 0.1272,
           "prob_A": 0.7874,
-          "predicted": "A"
+          "home_score": 1,
+          "away_score": 3
         }
       ]
     },
@@ -1483,147 +1495,147 @@
       "matches": [
         {
           "team1": "Argentina",
-          "team2": "Australia",
+          "team2": "Belgium",
           "group1": "Grupo J",
-          "group2": "Grupo D",
-          "prob1": 0.8253,
-          "prob2": 0.1747,
+          "group2": "Grupo G",
+          "prob1": 0.8025,
+          "prob2": 0.1975,
           "winner": "Argentina"
         },
         {
           "team1": "Spain",
-          "team2": "United States",
+          "team2": "Australia",
           "group1": "Grupo H",
           "group2": "Grupo D",
-          "prob1": 0.7586,
-          "prob2": 0.2414,
+          "prob1": 0.7863,
+          "prob2": 0.2137,
           "winner": "Spain"
         },
         {
           "team1": "France",
-          "team2": "Austria",
+          "team2": "United States",
           "group1": "Grupo I",
-          "group2": "Grupo J",
-          "prob1": 0.8022,
-          "prob2": 0.1978,
+          "group2": "Grupo D",
+          "prob1": 0.7735,
+          "prob2": 0.2265,
           "winner": "France"
         },
         {
           "team1": "England",
-          "team2": "Algeria",
+          "team2": "Austria",
           "group1": "Grupo L",
           "group2": "Grupo J",
-          "prob1": 0.6901,
-          "prob2": 0.3099,
+          "prob1": 0.717,
+          "prob2": 0.283,
           "winner": "England"
         },
         {
           "team1": "Colombia",
-          "team2": "South Korea",
+          "team2": "Paraguay",
           "group1": "Grupo K",
-          "group2": "Grupo A",
-          "prob1": 0.6859,
-          "prob2": 0.3141,
+          "group2": "Grupo D",
+          "prob1": 0.6869,
+          "prob2": 0.3131,
           "winner": "Colombia"
         },
         {
           "team1": "Brazil",
-          "team2": "Iran",
+          "team2": "South Korea",
           "group1": "Grupo C",
-          "group2": "Grupo G",
-          "prob1": 0.7926,
-          "prob2": 0.2074,
+          "group2": "Grupo A",
+          "prob1": 0.8073,
+          "prob2": 0.1927,
           "winner": "Brazil"
         },
         {
           "team1": "Portugal",
-          "team2": "Canada",
+          "team2": "Iran",
           "group1": "Grupo K",
-          "group2": "Grupo B",
-          "prob1": 0.7417,
-          "prob2": 0.2583,
+          "group2": "Grupo G",
+          "prob1": 0.7473,
+          "prob2": 0.2527,
           "winner": "Portugal"
         },
         {
           "team1": "Netherlands",
-          "team2": "Senegal",
+          "team2": "Canada",
           "group1": "Grupo F",
-          "group2": "Grupo I",
-          "prob1": 0.6395,
-          "prob2": 0.3605,
+          "group2": "Grupo B",
+          "prob1": 0.6392,
+          "prob2": 0.3608,
           "winner": "Netherlands"
         },
         {
           "team1": "Germany",
-          "team2": "Scotland",
+          "team2": "Egypt",
           "group1": "Grupo E",
-          "group2": "Grupo C",
-          "prob1": 0.8099,
-          "prob2": 0.1901,
+          "group2": "Grupo G",
+          "prob1": 0.8169,
+          "prob2": 0.1831,
           "winner": "Germany"
         },
         {
           "team1": "Japan",
-          "team2": "Egypt",
+          "team2": "Ivory Coast",
           "group1": "Grupo F",
-          "group2": "Grupo G",
-          "prob1": 0.6417,
-          "prob2": 0.3583,
+          "group2": "Grupo E",
+          "prob1": 0.5818,
+          "prob2": 0.4182,
           "winner": "Japan"
         },
         {
           "team1": "Morocco",
-          "team2": "Ivory Coast",
+          "team2": "Sweden",
           "group1": "Grupo C",
-          "group2": "Grupo E",
-          "prob1": 0.6429,
-          "prob2": 0.3571,
+          "group2": "Grupo F",
+          "prob1": 0.7773,
+          "prob2": 0.2227,
           "winner": "Morocco"
         },
         {
           "team1": "Norway",
-          "team2": "Sweden",
+          "team2": "DR Congo",
           "group1": "Grupo I",
-          "group2": "Grupo F",
-          "prob1": 0.754,
-          "prob2": 0.246,
+          "group2": "Grupo K",
+          "prob1": 0.7903,
+          "prob2": 0.2097,
           "winner": "Norway"
         },
         {
           "team1": "Mexico",
-          "team2": "DR Congo",
+          "team2": "Saudi Arabia",
           "group1": "Grupo A",
-          "group2": "Grupo K",
-          "prob1": 0.767,
-          "prob2": 0.233,
+          "group2": "Grupo H",
+          "prob1": 0.7951,
+          "prob2": 0.2049,
           "winner": "Mexico"
         },
         {
           "team1": "Croatia",
-          "team2": "Saudi Arabia",
+          "team2": "South Africa",
           "group1": "Grupo L",
-          "group2": "Grupo H",
-          "prob1": 0.782,
-          "prob2": 0.218,
+          "group2": "Grupo A",
+          "prob1": 0.785,
+          "prob2": 0.215,
           "winner": "Croatia"
         },
         {
-          "team1": "Switzerland",
+          "team1": "Ecuador",
           "team2": "Ghana",
-          "group1": "Grupo B",
+          "group1": "Grupo E",
           "group2": "Grupo L",
-          "prob1": 0.7841,
-          "prob2": 0.2159,
-          "winner": "Switzerland"
+          "prob1": 0.7913,
+          "prob2": 0.2087,
+          "winner": "Ecuador"
         },
         {
-          "team1": "Belgium",
+          "team1": "Switzerland",
           "team2": "Bosnia and Herzegovina",
-          "group1": "Grupo G",
+          "group1": "Grupo B",
           "group2": "Grupo B",
-          "prob1": 0.8297,
-          "prob2": 0.1703,
-          "winner": "Belgium"
+          "prob1": 0.8069,
+          "prob2": 0.1931,
+          "winner": "Switzerland"
         }
       ]
     },
@@ -1694,13 +1706,13 @@
           "winner": "Croatia"
         },
         {
-          "team1": "Switzerland",
-          "team2": "Belgium",
-          "group1": "Grupo B",
-          "group2": "Grupo G",
-          "prob1": 0.4756,
-          "prob2": 0.5244,
-          "winner": "Belgium"
+          "team1": "Ecuador",
+          "team2": "Switzerland",
+          "group1": "Grupo E",
+          "group2": "Grupo B",
+          "prob1": 0.4866,
+          "prob2": 0.5134,
+          "winner": "Switzerland"
         }
       ]
     },
@@ -1736,12 +1748,12 @@
         },
         {
           "team1": "Croatia",
-          "team2": "Belgium",
+          "team2": "Switzerland",
           "group1": "Grupo L",
-          "group2": "Grupo G",
-          "prob1": 0.4802,
-          "prob2": 0.5198,
-          "winner": "Belgium"
+          "group2": "Grupo B",
+          "prob1": 0.4884,
+          "prob2": 0.5116,
+          "winner": "Switzerland"
         }
       ]
     },
@@ -1759,11 +1771,11 @@
         },
         {
           "team1": "Germany",
-          "team2": "Belgium",
+          "team2": "Switzerland",
           "group1": "Grupo E",
-          "group2": "Grupo G",
-          "prob1": 0.7126,
-          "prob2": 0.2874,
+          "group2": "Grupo B",
+          "prob1": 0.7483,
+          "prob2": 0.2517,
           "winner": "Germany"
         }
       ]

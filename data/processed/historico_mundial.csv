@@ -47,3 +47,15 @@ date,home_team,away_team,home_score,away_score,result,predicted,correct,prob_A,p
 2026-06-23,Colombia,DR Congo,1.0,0.0,H,H,1,0.0949,0.2186,0.6864
 2026-06-23,England,Ghana,0.0,0.0,D,H,0,0.052,0.0959,0.8521
 2026-06-23,Panama,Croatia,0.0,1.0,A,A,1,0.6018,0.2251,0.173
+2026-06-24,Mexico,Czech Republic,3.0,0.0,H,H,1,0.071,0.164,0.765
+2026-06-24,South Africa,South Korea,1.0,0.0,H,A,0,0.5465,0.2985,0.155
+2026-06-24,Canada,Switzerland,1.0,2.0,A,H,0,0.2979,0.3207,0.3814
+2026-06-24,Bosnia and Herzegovina,Qatar,3.0,1.0,H,H,1,0.2243,0.2894,0.4863
+2026-06-24,Scotland,Brazil,0.0,3.0,A,A,1,0.6439,0.192,0.164
+2026-06-24,Morocco,Haiti,4.0,2.0,H,H,1,0.0958,0.1668,0.7374
+2026-06-25,United States,Turkey,2.0,3.0,A,H,0,0.2317,0.243,0.5253
+2026-06-25,Paraguay,Australia,0.0,0.0,D,A,0,0.3876,0.2902,0.3222
+2026-06-25,Curaçao,Ivory Coast,0.0,2.0,A,A,1,0.6754,0.1741,0.1505
+2026-06-25,Ecuador,Germany,2.0,1.0,H,A,0,0.4376,0.3135,0.249
+2026-06-25,Japan,Sweden,1.0,1.0,D,H,0,0.1632,0.1958,0.641
+2026-06-25,Tunisia,Netherlands,1.0,3.0,A,A,1,0.7699,0.1355,0.0947
